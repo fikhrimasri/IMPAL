@@ -11,9 +11,7 @@ class Cuser extends CI_Controller {
 
     public function index()
 	{
-		$this->load->view('page_header');
-		$this->load->view('page_home');
-		$this->load->view('page_footer');
+		$this->load->view('page_awal');
     }
     
     public function logPage()
