@@ -33,7 +33,7 @@
       </ul>
       <ul class="navbar-nav">
           <li class="nav-item">
-              <a class="navbar-brand"  href="#">
+              <a class="navbar-brand"  href="<?php echo base_url('') ?>">
                   <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
               </a>
           </li>
