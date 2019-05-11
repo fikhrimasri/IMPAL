@@ -52,9 +52,9 @@
     </nav>
     <div id="mySidenav" class="sidenav">
       <div style="margin-top:-50px">
-          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="assets/image/user.png" width="15"></span><span style=" margin-left: 15px">Akun</span></a>
-          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="assets/image/berkas.png" width="15"></span><span style=" margin-left: 15px">History</span> </a>
-          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="assets/image/Transaction.png" width="15"></span><span style=" margin-left: 15px">Transaksi</span></a>
+          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/user.png') ?>" width="15"></span><span style=" margin-left: 15px">Akun</span></a>
+          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/berkas.png') ?>" width="15"></span><span style=" margin-left: 15px">History</span> </a>
+          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/Transaction.png') ?>" width="15"></span><span style=" margin-left: 15px">Transaksi</span></a>
       </div>
     </div>
     <div class="container" align="center">
