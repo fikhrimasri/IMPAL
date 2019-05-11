@@ -1,5 +1,35 @@
-<link rel="stylesheet" href="<?php echo base_url('assets/css/login.css')?>">
-<div class="container">  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Login</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+   <div class="pembungkus">
+     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
+        <a class="navbar-brand"  href="<?php echo base_url('') ?>">
+            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="190px" height="45px">
+        </a>
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+           <li class="nav-item mr-3">
+              <a class="nav-link text-white" href="#">Contact Us</a>
+           </li>
+           <li class="nav-item mr-3">
+              <a class="nav-link text-white" href="#">About</a>
+           </li>
+           <li class="nav-item mr-3">
+              <a class="nav-link text-white" href="#">Logout</a>
+           </li>
+        </ul>
+     </nav>
+     <div class="container">  
          <div class="Isi row mt-5 mb-5">
             <div class="User col-lg-4">
                   <label for="Buat_User" ><h3 id="LabelUser">Login Sebagai User</h3></label>
@@ -8,11 +38,11 @@
                      <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="logoankBank" width="150px" height="35px">
                   </div>
                   <div class="card-body">
-                     <form method="POST" action="<?php echo base_url('Cuser/signIn/'); ?>">
+                     <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cuser/signIn/'); ?>">
                         <label for="Username" style="color:white"><h6>Username</h6></label>
-                        <input type="text" placeholder="Username..." class="form-control mb-2" name="username" required>
+                        <input name ="username" type="text" placeholder="Username..." class="form-control mb-2"required>
                         <label for="Password"style="color:white"><h6>Password</h6></label>
-                        <input type="password" placeholder="Password..." class="form-control mb-2" name="password" required>
+                        <input name="password" type="password" placeholder="Password..." class="form-control mb-2"required>
                         <a href="#"><h6 style="color:white">Lupa Password?</h6></a>
                         <div class="cekbox mt-2">
                               <label class="checkbox pull-left" for="checkbox">
@@ -42,9 +72,9 @@
                      <div class="card-body">
                         <form action="">
                               <label for="Username"style="color:white"><h6>Username</h6></label>
-                              <input type="text" class="form-control mb-2"required>
+                              <input type="text" class="form-control mb-2" placeholder="Username..." required>
                               <label for="Password"style="color:white"><h6>Password</h6></label>
-                              <input type="password" class="form-control mb-2"required>
+                              <input type="password" class="form-control mb-2" placeholder="Password..." required>
                               <a href="#" style="color:white"><h6>Lupa Password?</h6></a>
                               <div class="cekbox mt-2">
                                  <label for="checkbox" class="checkbox pull-left">
@@ -69,3 +99,65 @@
          </div>
      </div>
    </div>
+
+  <footer class="page-footer font-small" style="background-color:#0E0B2B;">
+      <div class="footer-copyright text-center py-2 text-white" style="background-color:#0E0B2B;">
+        <span>© 2019 Copyright : </span><span><a href="#"> gangbank.com</a></span>
+      </div>
+    </footer>
+   
+
+
+</body>
+<style>
+   .carousel-inner img {
+      width: 100%;
+      height: 500px;
+    }
+   .carousel-caption .login{
+     background-color: orange;
+     color: white;
+     border:1px solid white;
+   }
+   .carousel-caption .Signup{
+     background-color: #6c757db5;
+     border: 1px solid white;
+     color: white;
+   }
+   .Isi{
+      height: 100vh;
+      
+   }
+   .pembungkus{
+      background:url(image/slide6.jpg);
+      background-repeat:no-repeat ;
+      background-size: cover;
+      background-position:0 70px;
+      
+      height: 100%;
+   }
+   #LabelUser{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600;
+      color: blue;
+      font-size: 28px;
+      text-align: center;
+      
+   }
+   #LabelAdmin{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600;
+      color:blue;
+      font-size: 28px;
+      text-align: center;
+      
+   }
+   .User .card{
+      background-color: transparent;
+   }
+   .Admin .card{
+      background-color: transparent;
+   }
+   
+</style>
+</html>
