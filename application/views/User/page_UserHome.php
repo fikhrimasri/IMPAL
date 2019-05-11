@@ -27,14 +27,14 @@
           <li class="nav-item">
               <button type="button" onclick="openNav()" id="sidebarCollapse" class="btn btn-dark" style="margin-right:30px; border-style: solid; border-color: white;">
                   <i class="fas fa-align-left"></i>
-                  <span><img src="assets/image/wmenu.png" style="width:15px"></span>
+                  <span><img src="<?php echo base_url('assets/image/wmenu.png') ?>" style="width:15px"></span>
               </button>
           </li>
       </ul>
       <ul class="navbar-nav">
           <li class="nav-item">
-              <a class="navbar-brand"  href="#">
-                  <img src="assets/image/LOGO.png" alt="LogoGankBank" width="150px">
+              <a class="navbar-brand"  href="<?php echo base_url('') ?>">
+                  <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
               </a>
           </li>
       </ul>
@@ -46,7 +46,7 @@
             <a class="nav-link text-white" href="#">About</a>
           </li>
           <li class="nav-item mr-3" >
-            <a class="nav-link text-white" href="#">Logout</a>
+            <a class="nav-link text-white" href="<?php echo base_url('Cuser/logOut/') ?>">Logout</a>
           </li>
       </ul>
     </nav>
@@ -63,7 +63,7 @@
         <div class="col-md-4">
           <div>
             <p class="labelmenu text-light">ACCOUNT</p>
-            <img class="menugambar" src="assets/image/m_akun.png" alt="">
+            <img class="menugambar" src="<?php echo base_url('assets/image/m_akun.png') ?>" alt="">
           </div>
           <div class="container">
             <div class="row">
@@ -79,7 +79,7 @@
         <div class="col-md-4">
           <div>
             <p class="labelmenu text-light">HISTORY</p>
-            <img class="menugambar" src="assets/image/m_history.png" alt="">
+            <img class="menugambar" src="<?php echo base_url('assets/image/m_history.png') ?>" alt="">
           </div>
           <div class="row">
             <div class="col-md-12">
@@ -90,7 +90,7 @@
         <div class="col-md-4">
           <div>
             <p class="labelmenu text-light">TRANSFER</p>
-            <img class="menugambar" src="assets/image/m_transaksi.png" alt="">
+            <img class="menugambar" src="<?php echo base_url('assets/image/m_transaksi.png') ?>" alt="">
           </div>
           <div class="row">
             <div class="col-md-6">

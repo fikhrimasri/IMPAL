@@ -24,6 +24,11 @@ class Cuser extends CI_Controller {
 		$this->load->view('user/page_SignUp');
     }
 
+    public function homeUserPage()
+    {
+      $this->load->view('user/page_UserHome');
+    }
+
     public function addUser(){
       $this->form_validation->set_rules('username','username','required');
       $this->form_validation->set_rules('email','email','required');
@@ -41,11 +46,16 @@ class Cuser extends CI_Controller {
         $user = $this->M_user->findUser();
         if($user != FALSE){
           $this->session->set_userdata('username',$user['username']);
-          redirect(site_url('Cuser'));
+          redirect(site_url('Cuser/homeUserPage'));
         }else{
           redirect(site_url('Cuser/logPage'));
         }
       }
+
+      public function logOut(){
+        $this->session->sess_destroy();
+        redirect(base_url(''));
+    }
 
     }
     
