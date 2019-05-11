@@ -68,10 +68,10 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <button class="btn btn-primary vv">Ubah Password</button>
+                <a href="<?php echo base_url();?>Cuser/gantipass" class="btn btn-primary vv" type="button">Ubah Password</a>
               </div>
               <div class="col-md-6">
-                <button class="btn btn-primary vv">Cek Saldo</button>
+                <a href="<?php echo base_url();?>Cuser/ceksaldo" class="btn btn-primary vv" type="button">Cek Saldo</a>
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <button class="btn btn-primary" style="width:310px">Lihat History</button>
+              <a href="<?php echo base_url();?>Cuser/history" class="btn btn-primary" type="button" style="width:310px">Lihat History</a>
             </div>
           </div>
         </div>
@@ -94,10 +94,10 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <button class="btn btn-primary vv">Virtual Account</button>
+              <a href="<?php echo base_url();?>Cuser/virtual" class="btn btn-primary vv" type="button">Virtual Account</a>
             </div>
             <div class="col-md-6">
-              <button class="btn btn-primary vv">Transfer</button>
+              <a href="<?php echo base_url();?>Cuser/transfer" class="btn btn-primary vv" type="button">Transfer</a>
             </div>
           </div>
         </div>
