@@ -1,8 +1,33 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_user extends CI_model
 {
-    
+    public function Register() {
+        $data = array(
+            "username" => $this->input->post('username'),
+            "email" => $this->input->post('email'),
+			"password" => md5($this->input->post('password'))
+        );
+
+        if($this->isExist($data['email'])) {
+            return false;
+        } else {
+            $this->db->insert('akun', $data);
+            return true;
+        };
+    }
+
+    public function isExist($email){
+        $this->db->where('email',$email);
+        $result = $this->db->get('akun')->result_array();
+        if(isset($result[0])){
+            return true;
+        }else{
+            return false;
+        };
+    }
+}
     // public function adduser()
     // {
     //     $data = [
@@ -55,4 +80,3 @@ class M_user extends CI_model
     //         return $result->row_array();
     //     }
     // }
-}

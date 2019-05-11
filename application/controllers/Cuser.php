@@ -29,6 +29,20 @@ class Cuser extends CI_Controller {
 		$this->load->view('user/page_SignUp');
 		$this->load->view('page_footer');
     }
+
+    public function addUser(){
+      $this->form_validation->set_rules('username','username','required');
+      $this->form_validation->set_rules('email','email','required');
+      $this->form_validation->set_rules('password','password','required');
+  
+      if($this->form_validation->run()==FALSE){
+          redirect('index.php/Cuser/sigPage');
+      }else{
+          $this->M_user->Register();
+          redirect(site_url('index.php/Cuser/logPage'));
+          }
+      }
+    }
     
     // function tambahuser()
     // {
@@ -58,4 +72,4 @@ class Cuser extends CI_Controller {
     //         }
     //     }
     // }
-}
+
