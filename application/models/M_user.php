@@ -27,6 +27,22 @@ class M_user extends CI_model
             return false;
         };
     }
+
+    public function findUser(){
+        $username = $this->input->post('username');
+        $password = md5($this->input->post('password'));
+        
+        $this->db->select('username');
+        $this->db->from('akun');
+        $this->db->where('username',$username);
+        $this->db->where('password',$password);
+        $result = $this->db->get();
+        if($result->num_rows()==0){
+            return FALSE;
+        }else{
+            return $result->row_array();
+        }
+    }
 }
     // public function adduser()
     // {

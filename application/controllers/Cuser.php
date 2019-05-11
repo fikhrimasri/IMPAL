@@ -42,6 +42,17 @@ class Cuser extends CI_Controller {
           redirect(site_url('index.php/Cuser/logPage'));
           }
       }
+
+      public function signIn(){
+        $user = $this->M_user->findUser();
+        if($user != FALSE){
+          $this->session->set_userdata('username',$user['username']);
+          redirect(site_url('index.php/Cuser'));
+        }else{
+          redirect(site_url('index.php/Cuser/logPage'));
+        }
+      }
+
     }
     
     // function tambahuser()
