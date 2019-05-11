@@ -51,30 +51,35 @@ class Cuser extends CI_Controller {
     {
       $this->load->view('page_header');
       $this->load->view('user/page_GantiPassword');
+      $this->load->view('page_footer');
     }
 
     public function ceksaldo()
     {
       $this->load->view('page_header');
       $this->load->view('user/page_CekSaldo');
+      $this->load->view('page_footer');
     }
 
     public function history()
     {
       $this->load->view('page_header');
       $this->load->view('user/page_HistoryTransaksi');
+      $this->load->view('page_footer');
     }
 
     public function virtual()
     {
       $this->load->view('page_header');
       $this->load->view('user/page_RekeningVirtualPage1');
+      $this->load->view('page_footer');
     }
 
     public function transfer()
     {
       $this->load->view('page_header');
       $this->load->view('user/page_TransferPage1');
+      $this->load->view('page_footer');
     }
 
     public function addUser(){
