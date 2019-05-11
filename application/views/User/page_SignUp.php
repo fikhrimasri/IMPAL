@@ -7,7 +7,7 @@
                         <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="190px" height="35px"  alt="Logo">
                      </div>
                      <div class="card-body">
-                        <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('index.php/Cuser/addUser/'); ?>">
+                        <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cuser/addUser/'); ?>">
                            <label for="Username"style="color:white"><h6>Username</h6></label>
                            <input type="text"placeholder="Username" class="form-control" name="username" required>
                            <label for="Email"style="color:white"><h6>Email</h6></label>

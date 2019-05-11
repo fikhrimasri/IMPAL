@@ -9,8 +9,8 @@
             <div class="carousel-item active">
                <img  width="1100" height="500" src="<?php echo base_url('assets/image/slide1.png') ?>" alt="Slide1">
                <div class="carousel-caption">
-                  <a href="<?php echo base_url('index.php/Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
-                  <a href="<?php echo base_url('index.php/Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a>                 
+                  <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
+                  <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a>                 
                   <h3>GankBank</h3>
                   <p>Transaksi aman dan terpercaya hanya di GankBank</p>
                </div>
@@ -18,8 +18,8 @@
             <div class="carousel-item">
                <img width="1100" height="500" src="<?php echo base_url('assets/image/slide2.jpg') ?>" alt="Slide2">
                <div class="carousel-caption">
-                  <a href="<?php echo base_url('index.php/Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
-                  <a href="<?php echo base_url('index.php/Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a> 
+                  <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
+                  <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a> 
                   <h3>GankBank</h3>
                   <p>Banyak Untungnya Segera Bergabung dengan mendaftarkan diri anda.</p>
                </div>
@@ -27,8 +27,8 @@
             <div class="carousel-item">
                <img width="1100" height="500" src="<?php echo base_url('assets/image/slide8.jpg') ?>" alt="slide3">
                <div class="carousel-caption">
-                  <a href="<?php echo base_url('index.php/Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
-                  <a href="<?php echo base_url('index.php/Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a> 
+                  <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
+                  <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a> 
                   <h3>GankBank</h3>
                   <p>Banyak Hadiah menanti anda tiap tahunnya</p>
                </div>

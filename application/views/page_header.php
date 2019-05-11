@@ -12,7 +12,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
-        <a class="navbar-brand"  href="<?php echo base_url('index.php/Cuser/index') ?>">
+        <a class="navbar-brand"  href="<?php echo base_url('Cuser/index') ?>">
             <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="190px" height="45px">
         </a>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">

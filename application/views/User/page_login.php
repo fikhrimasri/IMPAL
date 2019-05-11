@@ -8,7 +8,7 @@
                      <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="logoankBank" width="150px" height="35px">
                   </div>
                   <div class="card-body">
-                     <form method="POST" action="<?php echo base_url('index.php/Cuser/signIn/'); ?>">
+                     <form method="POST" action="<?php echo base_url('Cuser/signIn/'); ?>">
                         <label for="Username" style="color:white"><h6>Username</h6></label>
                         <input type="text" placeholder="Username..." class="form-control mb-2" name="username" required>
                         <label for="Password"style="color:white"><h6>Password</h6></label>

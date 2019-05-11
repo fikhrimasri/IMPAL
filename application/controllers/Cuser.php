@@ -36,10 +36,10 @@ class Cuser extends CI_Controller {
       $this->form_validation->set_rules('password','password','required');
   
       if($this->form_validation->run()==FALSE){
-          redirect('index.php/Cuser/sigPage');
+          redirect('Cuser/sigPage');
       }else{
           $this->M_user->Register();
-          redirect(site_url('index.php/Cuser/logPage'));
+          redirect(site_url('Cuser/logPage'));
           }
       }
 
@@ -47,9 +47,9 @@ class Cuser extends CI_Controller {
         $user = $this->M_user->findUser();
         if($user != FALSE){
           $this->session->set_userdata('username',$user['username']);
-          redirect(site_url('index.php/Cuser'));
+          redirect(site_url('Cuser'));
         }else{
-          redirect(site_url('index.php/Cuser/logPage'));
+          redirect(site_url('Cuser/logPage'));
         }
       }
 
