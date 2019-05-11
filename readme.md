@@ -19,6 +19,7 @@ Project of Software Implementation and Testing Course at Telkom University
 * **Dandi Baroes** - [dandibaroes](https://github.com/dandibaroes)
 * **Fikhri Masri** - [fikhrimasri](https://github.com/fikhrimasri)
 * **Khairul Kanters** - [khakans](https://github.com/khakans)
+* **Lukman Budiman** - [elbiz17](https://github.com/elbiz17)
 * **Rifqi Taufiqurrohman** - [RifqiTaw](https://github.com/RifqiTaw)
 
 ## License
