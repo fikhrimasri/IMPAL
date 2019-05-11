@@ -1,0 +1,16 @@
+Berikut Kisi-kisi UTS:
+1. Pengertian Sistem Terdistribusi v
+2. NO Global Clock v
+3. Life Cycle UDP Datagram Comm. v 
+4. Model komunikasi synchronous dan asynchronous v
+5. RPC dan RMI v
+6. Call Semantics v 
+7. Styles of Indirect Communication v
+8. Couplings Relationship v 
+9. algoritma quick sort 
+10. Dekomposisi/Partisi
+11. Taksonomi Flynn’s v
+12. hukum Amdahl v
+13. granularitas v
+14. load balancing v
+15. code MPI dalam bahasa Python 
