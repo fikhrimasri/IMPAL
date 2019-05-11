@@ -45,9 +45,19 @@
           <li class="nav-item mr-3" >
             <a class="nav-link text-white" href="#">About</a>
           </li>
-          <li class="nav-item mr-3" >
-            <a class="nav-link text-white" href="#">Logout</a>
-          </li>
+          <?php
+          if (($this->session->userdata('email'))!=null){
+                        echo "
+                        <li class='nav-item mr-3' >
+                        <a class='nav-link text-white' href=".base_url('Cuser/logPage/').">Logout</a>
+                        </li>
+                        ";
+                    }else{
+                        echo "
+                        ";
+                        }
+                        ?>
+          
       </ul>
     </nav>
     <div id="mySidenav" class="sidenav">
