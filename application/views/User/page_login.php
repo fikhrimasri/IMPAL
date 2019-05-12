@@ -138,7 +138,7 @@
       
    }
    .pembungkus{
-      background:url(image/slide6.jpg);
+      background:url(assets/image/slide6.jpg);
       background-repeat:no-repeat ;
       background-size: cover;
       background-position:0 70px;

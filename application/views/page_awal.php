@@ -59,7 +59,7 @@
                </div>
             </div>
             <div class="carousel-item">
-               <img width="1100" height="500" src="<?php echo base_url('assets/image/slide2.jpg') ?>" alt="Slide2">
+               <img width="1100" height="500" src="<?php echo base_url('assets/image/slide11.png') ?>" alt="Slide2">
                <div class="carousel-caption">
                   <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
                   <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a> 
