@@ -43,7 +43,7 @@ class M_user extends CI_model
             return $result->row_array();
         }
     }
-    //update password masih belum jalan
+    
     public function save()
     {
         $pass = md5($this->input->post('new'));

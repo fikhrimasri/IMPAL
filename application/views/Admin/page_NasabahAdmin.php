@@ -54,7 +54,7 @@
     <div class="container" align="center">
       <div class="row divide" style="margin-top:90px">
         <style>.menugambar{height: 250px; margin-bottom: -20px} .labelmenu{font-size: 30px; margin-bottom:-25px} .vv{width: 150px}</style>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <div>
             <p class="labelmenu text-light">Data Nasabah</p>
             <img class="menugambar" src="<?php echo base_url('assets/image/m_akun.png') ?>" alt="">
@@ -66,19 +66,30 @@
               </div>
             </div>
           </div>
+        </div> -->
+        <div class="col-md-4">
+          <div>
+            <p class="labelmenu text-light" >Hapus Data Nasabah</p>
+            <img class="menugambar" src="<?php echo base_url('assets/image/m_history.png') ?>" alt="">
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button class="btn btn-primary" style="width:310px">Hapus Data Nasabah</button>
+            </div>
+          </div>
         </div>
-        <!-- <div class="col-md-4">
+        <div class="col-md-4">
           <div>
             <p class="labelmenu text-light">Update Data Nasabah</p>
-            <img class="menugambar" src="<?php echo base_url('assets/image/m_history.png') ?>" alt="">
+            <img class="menugambar" src="<?php echo base_url('assets/image/m_transaksi.png') ?>" alt="">
           </div>
           <div class="row">
             <div class="col-md-12">
               <button class="btn btn-primary" style="width:310px">Update Data Nasabah</button>
             </div>
           </div>
-        </div> -->
-        <div class="col-md-4">
+        </div>
+        <!-- <div class="col-md-4">
           <div>
             <p class="labelmenu text-light">Lihat Transaksi Nasabah</p>
             <img class="menugambar" src="<?php echo base_url('assets/image/m_transaksi.png') ?>" alt="">
@@ -88,7 +99,7 @@
               <button class="btn btn-primary vv ml-4" style="width:310px">Lihat Transaksi Nasabah</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
