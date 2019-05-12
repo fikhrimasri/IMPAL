@@ -11,23 +11,75 @@ class Cuser extends CI_Controller {
 
     public function index()
 	{
-		$this->load->view('page_header');
-		$this->load->view('page_home');
-		$this->load->view('page_footer');
+		$this->load->view('page_awal');
     }
     
     public function logPage()
 	{
-		$this->load->view('page_header');
 		$this->load->view('user/page_login');
-		$this->load->view('page_footer');
     }
     
     public function sigPage()
 	{
-		$this->load->view('page_header');
 		$this->load->view('user/page_SignUp');
-		$this->load->view('page_footer');
+    }
+
+    public function homeUserPage()
+    {
+      $this->load->view('user/page_UserHome');
+    }
+    public function gantiPasswordPage()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_GantiPassword');
+      $this->load->view('page_footer');
+      }
+    public function hapusDataNasabahPage()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_hapusDataNasabah');
+      $this->load->view('page_footer');
+     }
+     public function updateDataNasabahPage()
+     {
+       $this->load->view('page_header');
+       $this->load->view('user/page_updateDataNasabah');
+       $this->load->view('page_footer');
+      }
+
+    public function gantipass()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_GantiPassword');
+      $this->load->view('page_footer');
+    }
+
+    public function ceksaldo()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_CekSaldo');
+      $this->load->view('page_footer');
+    }
+
+    public function history()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_HistoryTransaksi');
+      $this->load->view('page_footer');
+    }
+
+    public function virtual()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_RekeningVirtualPage1');
+      $this->load->view('page_footer');
+    }
+
+    public function transfer()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_TransferPage1');
+      $this->load->view('page_footer');
     }
 
     public function addUser(){
@@ -47,40 +99,16 @@ class Cuser extends CI_Controller {
         $user = $this->M_user->findUser();
         if($user != FALSE){
           $this->session->set_userdata('username',$user['username']);
-          redirect(site_url('Cuser'));
+          redirect(site_url('Cuser/homeUserPage'));
         }else{
           redirect(site_url('Cuser/logPage'));
         }
       }
 
+      public function logOut(){
+        $this->session->sess_destroy();
+        redirect(base_url(''));
+    }
+
     }
     
-    // function tambahuser()
-    // {
-    //     $this->form_validation->set_rules('nama', 'name', 'required');
-    //     $this->form_validation->set_rules('email', 'email', 'required');
-    //     $this->form_validation->set_rules('password', 'password', 'required');
-
-    //     if ($this->form_validation->run() == FALSE) {
-    //         $data['title'] = "LOGIN";
-    //         $this->load->view('page_header', $data);
-    //         $this->load->view('page_SignUp');
-    //         $this->load->view('page_footer');
-    //     }else {
-    //         $e = $this->user_model->findUser($this->input->post('email', true));
-    //         if($e > 0){
-    //             $this->session->set_flashdata('flash', '1. An account using this email address has already registered. Please enter a valid password or request a new one.');
-    //             redirect('index.php/Cuser/sigPage');
-    //         }else{
-    //             $login = [
-    //                 "email" => $this->input->post('email', true),
-    //                 "password"=> $this->input->post('password', true),
-    //             ];
-    //             $this->session->set_userdata('login', $login);
-    //             $this->user_model->addUser();
-    //             $this->session->set_flashdata('flash', 'register berhasil');
-    //             redirect('index.php/user/logPage');
-    //         }
-    //     }
-    // }
-

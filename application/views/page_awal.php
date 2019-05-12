@@ -1,4 +1,47 @@
-<link rel="stylesheet" href="<?php echo base_url('assets/css/Home.css')?>">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Home</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+   <div class="main">
+
+ 
+     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
+        <a class="navbar-brand"  href="<?php echo base_url('') ?>">
+            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="190px" height="45px">
+        </a>
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+           <li class="nav-item mr-3">
+              <a class="nav-link text-white" href="#">Contact Us</a>
+           </li>
+           <li class="nav-item mr-3">
+              <a class="nav-link text-white" href="#">About</a>
+           </li>
+           <?php
+          if (($this->session->userdata('email'))!=null){
+                        echo "
+                        <li class='nav-item mr-3' >
+                        <a class='nav-link text-white' href=".base_url('Cuser/logPage/').">Logout</a>
+                        </li>
+                        ";
+                    }else{
+                        echo "
+                        ";
+                        }
+                        ?>
+        </ul>
+
+     </nav>
+
      <div id="demo"  class="carousel slide" data-ride="carousel"> 
          <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -41,3 +84,31 @@
             <span class="carousel-control-next-icon"></span>
          </a>
      </div>
+   </div>
+   <footer class="page-footer font-small" style="background-color:#0E0B2B;">
+      <div class="footer-copyright text-center py-2 text-white" style="background-color:#0E0B2B;">
+        <span>© 2019 Copyright : </span><span><a href="#"> gangbank.com</a></span>
+      </div>
+    </footer>
+</body>
+<style>  
+.main{ 
+   height: 100%;
+}
+.carousel-inner img {
+   width: 100%;
+   height: 100%;
+   }
+.carousel-caption .login{
+   background-color: orange;
+   color: white;
+   border:1px solid white;
+}
+.carousel-caption .Signup{
+   background-color: #6c757db5;
+   border: 1px solid white;
+   color: white;
+}
+  
+</style>
+</html>
