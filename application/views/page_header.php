@@ -49,9 +49,9 @@
           if (($this->session->userdata('email'))!=null){
                         echo "
                         <li class='nav-item mr-3' >
-                        <a class='nav-link text-white' data-toggle='modal' data-target='#myModal'>Logout</a>
+                        <a class='nav-link text-white' href='#' data-toggle='modal' data-target='#myModals'>Logout</a>
                         </li>
-                        <div class='modal' align='center' id='myModal' style='margin-top:170px'>
+                        <div class='modal' align='center' id='myModals' style='margin-top:170px'>
                           <div class='modal-dialog'>
                             <div class='modal-content'>
                               <div class='modal-header'>
@@ -64,7 +64,7 @@
                                 Apakah anda ingin melanjutkan?
                               </div>
                               <div class='modal-footer'>
-                                <button type='submit' class='btn btn-danger'><a href=".base_url('Cuser/logPage/').">Yes</a></button>
+                                <button type='submit' class='btn btn-danger'><a class='text-light' href=".base_url('Cuser/logPage/').">Yes</a></button>
                                 <button type='button' class='btn btn-danger' data-dismiss='modal'>No</button>
                               </div>
                             </div>
