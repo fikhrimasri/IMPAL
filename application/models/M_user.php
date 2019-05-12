@@ -50,7 +50,7 @@ class M_user extends CI_model
         $data = array (
         'password' => $pass
         );
-        $this->db->where('id_akun', $this->session->userdata('id_akun'));
+        $this->db->where('username', $this->session->userdata('username'));
         $this->db->update('akun', $data);
     }
 
@@ -61,4 +61,5 @@ class M_user extends CI_model
         $query = $this->db->get('akun');
             return $query->result();;
     }
+
 }

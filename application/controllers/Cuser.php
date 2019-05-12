@@ -112,6 +112,7 @@ class Cuser extends CI_Controller {
     //masih belum jalan update password
     public function save_password()
     { 
+     $this->form_validation->set_rules('old', 'old', 'required');
      $this->form_validation->set_rules('new','New','required');
      $this->form_validation->set_rules('re_new', 'Retype New', 'required|matches[new]');
        if($this->form_validation->run() == FALSE)
