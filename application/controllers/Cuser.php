@@ -109,7 +109,7 @@ class Cuser extends CI_Controller {
         $this->session->sess_destroy();
         redirect(base_url(''));
     }
-    //masih belum jalan update password
+    
     public function save_password()
     { 
      $this->form_validation->set_rules('old', 'old', 'required');

@@ -4,24 +4,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Cadmin extends CI_Controller {
 
 	public function __construct()
- 	{
+ 	  {
  		parent::__construct();
  		$this->load->model('M_admin');
     }
 
     public function index()
-	{
+  	{
 		$this->load->view('page_awal');
     }
 
     public function logPage()
-	{
+	  {
 		$this->load->view('user/page_login');
     }
 
     public function homeAdminPage()
 	{
 		$this->load->view('admin/page_HomeAdmin');
+    }
+
+    public function datanasabah()
+    {
+      $this->load->view('page_header_admin');
     }
 
       public function signIn(){

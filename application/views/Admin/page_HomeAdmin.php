@@ -56,18 +56,18 @@
         <style>.menugambar{height: 250px; margin-bottom: -20px} .labelmenu{font-size: 30px; margin-bottom:-25px} .vv{width: 150px}</style>
         <div class="col-md-4">
           <div>
-            <p class="labelmenu text-light">Hapus Nasabah</p>
+            <p class="labelmenu text-light">Data Nasabah</p>
             <img class="menugambar" src="<?php echo base_url('assets/image/m_akun.png') ?>" alt="">
           </div>
           <div class="container">
             <div class="row">
               <div class="col-md-6 mx-auto">
-                <button class="btn btn-primary">Hapus Nasabah</button>
+                <a href="<?php echo base_url('Cadmin/datanasabah') ?>"class="btn btn-primary" type="button">Check Data Nasabah</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <div>
             <p class="labelmenu text-light">Update Data Nasabah</p>
             <img class="menugambar" src="<?php echo base_url('assets/image/m_history.png') ?>" alt="">
@@ -77,7 +77,7 @@
               <button class="btn btn-primary" style="width:310px">Update Data Nasabah</button>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="col-md-4">
           <div>
             <p class="labelmenu text-light">Lihat Transaksi Nasabah</p>
