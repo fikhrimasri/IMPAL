@@ -26,7 +26,8 @@ class Cadmin extends CI_Controller {
 
     public function datanasabah()
     {
-      $this->load->view('page_header_admin');
+      $this->load->view('admin/page_NasabahAdmin');
+      $this->load->view('page_footer');
     }
 
       public function signIn(){
