@@ -16,7 +16,7 @@
   
      <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
         <a class="navbar-brand"  href="<?php echo base_url('') ?>">
-            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="190px" height="45px">
+            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
         </a>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
            <li class="nav-item mr-3">
@@ -43,9 +43,9 @@
      <div class="container">
          <div class="row mt-5">
             <div class="SignUp col-lg-4 mx-auto mt-5">
-               <div class="card">
+               <div class="card" style="margin-top:-50px">
                      <div class="card-header bg-primary text-center">
-                        <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="190px" height="35px"  alt="Logo">
+                        <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="150px" alt="Logo">
                      </div>
                      <div class="card-body">
                         <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cuser/addUser/'); ?>">
@@ -73,7 +73,7 @@
          </div>
      </div>
    </div>
-   <footer class="page-footer font-small" style="background-color:#0E0B2B;">
+   <footer class="page-footer font-small fixed-bottom" style="background-color:#0E0B2B;">
     <div class="footer-copyright text-center py-2 text-white" style="background-color:#0E0B2B;">
       <span>© 2019 Copyright : </span><span><a href="#"> gangbank.com</a></span>
     </div>
