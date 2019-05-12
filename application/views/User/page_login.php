@@ -67,7 +67,7 @@
                      
                   </div>
                   <div class="card-footer bg-primary text-center text-white">
-                        <span>Belum punya akun. <a class ="text-white"href="#">Klik Disini</a></span>
+                        <span>Belum punya akun. <a class ="text-white"href="<?php echo base_url('Cuser/sigPage') ?>">Klik Disini</a></span>
                      </div>
                </div>
             </div>
@@ -96,12 +96,6 @@
                                  <input type="submit" class="btn btn-primary" value="Login"style="border-radius:10px">
                               </div>
                         </form>
-                     </div>
-                     <div class="card-footer bg-primary text-center text-white">
-                        <span>Belum Punya Akun. <a href="#" class="text-white">Klik Disini</a></span>
-                     </div>
-                  
-
                </div>
 
             </div>
