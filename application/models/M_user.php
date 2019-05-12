@@ -43,4 +43,22 @@ class M_user extends CI_model
             return $result->row_array();
         }
     }
+    //update password masih belum jalan
+    public function save()
+    {
+        $pass = md5($this->input->post('new'));
+        $data = array (
+        'password' => $pass
+        );
+        $this->db->where('id_akun', $this->session->userdata('id_akun'));
+        $this->db->update('akun', $data);
+    }
+
+    public function cek_old()
+    {
+        $old = md5($this->input->post('old'));   
+        $this->db->where('password',$old);
+        $query = $this->db->get('akun');
+            return $query->result();;
+    }
 }

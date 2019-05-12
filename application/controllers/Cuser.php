@@ -109,5 +109,27 @@ class Cuser extends CI_Controller {
         $this->session->sess_destroy();
         redirect(base_url(''));
     }
+    //masih belum jalan update password
+    public function save_password()
+    { 
+     $this->form_validation->set_rules('new','New','required');
+     $this->form_validation->set_rules('re_new', 'Retype New', 'required|matches[new]');
+       if($this->form_validation->run() == FALSE)
+     {
+      redirect(site_url('Cuser/gantipass'));
+     }else{
+      $cek_old = $this->M_user->cek_old();
+      if ($cek_old == False){
+       $this->session->set_flashdata('error','Old password not match!' );
+       redirect(site_url('Cuser/gantipass'));
+      }else{
+       $this->M_user->save();
+       $this->session->sess_destroy();
+      //  $this->session->set_userdata('password',$user['password']);
+       $this->session->set_flashdata('error','Your password success to change, please relogin !' );
+       redirect(site_url('Cuser/logPage'));
+      }//end if valid_user
+     }
+    }
 }
     
