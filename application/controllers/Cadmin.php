@@ -19,11 +19,16 @@ class Cadmin extends CI_Controller {
 		$this->load->view('user/page_login');
     }
 
+    public function homeAdminPage()
+	{
+		$this->load->view('admin/page_HomeAdmin');
+    }
+
       public function signIn(){
         $user = $this->M_admin->findUser();
         if($user != FALSE){
           $this->session->set_userdata('username',$user['username']);
-          redirect(site_url('Cadmin/index'));
+          redirect(site_url('Cadmin/homeAdminPage'));
         }else{
           redirect(site_url('Cadmin/logPage'));
         }
