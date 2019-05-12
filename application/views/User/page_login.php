@@ -79,11 +79,11 @@
                      <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="150px" height="35px" alt="">
                   </div>
                      <div class="card-body">
-                        <form action="">
+                        <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cadmin/signIn/'); ?>">
                               <label for="Username"style="color:white"><h6>Username</h6></label>
-                              <input type="text" class="form-control mb-2" placeholder="Username..." required>
+                              <input name ="username" type="text" class="form-control mb-2" placeholder="Username..." required>
                               <label for="Password"style="color:white"><h6>Password</h6></label>
-                              <input type="password" class="form-control mb-2" placeholder="Password..." required>
+                              <input name="password" type="password" class="form-control mb-2" placeholder="Password..." required>
                               <a href="#" style="color:white"><h6>Lupa Password?</h6></a>
                               <div class="cekbox mt-2">
                                  <label for="checkbox" class="checkbox pull-left">
