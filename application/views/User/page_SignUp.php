@@ -55,11 +55,10 @@
                            <input name="email" type="email" placeholder="Email" class="form-control"required>
                            <label for="Password"style="color:white"><h6>Password</h6></label>
                            <input name="password" type="password"placeholder="Password" class="form-control"required>
-                           <div class="cexbox">
-                              <label for="checkbox" class="checkbox pull-left">
-                                 <input type="checkbox"><span style="color:white">Remember me</span>
-                              </label>
-                           </div>
+                           <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required/>
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
                            <div class="signup text-center">
                               <input type="submit" class="btn btn-primary" value="Sign Up">
                            </div>
