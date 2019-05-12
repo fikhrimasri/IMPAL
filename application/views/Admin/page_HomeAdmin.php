@@ -25,14 +25,6 @@
     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
       <ul class="navbar-nav">
           <li class="nav-item">
-              <button type="button" onclick="openNav()" id="sidebarCollapse" class="btn btn-dark" style="margin-right:30px; border-style: solid; border-color: white;">
-                  <i class="fas fa-align-left"></i>
-                  <span><img src="<?php echo base_url('assets/image/wmenu.png') ?>" style="width:15px"></span>
-              </button>
-          </li>
-      </ul>
-      <ul class="navbar-nav">
-          <li class="nav-item">
               <a class="navbar-brand"  href="<?php echo base_url('') ?>">
                   <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
               </a>
@@ -59,13 +51,6 @@
                         ?>
       </ul>
     </nav>
-    <div id="mySidenav" class="sidenav">
-      <div style="margin-top:-50px">
-          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/user.png') ?>" width="15"></span><span style=" margin-left: 15px">Akun</span></a>
-          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/berkas.png') ?>" width="15"></span><span style=" margin-left: 15px">History</span> </a>
-          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/Transaction.png') ?>" width="15"></span><span style=" margin-left: 15px">Transaksi</span></a>
-      </div>
-    </div>
     <div class="container" align="center">
       <div class="row divide" style="margin-top:90px">
         <style>.menugambar{height: 250px; margin-bottom: -20px} .labelmenu{font-size: 30px; margin-bottom:-25px} .vv{width: 150px}</style>
