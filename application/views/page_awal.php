@@ -52,29 +52,36 @@
             <div class="carousel-item active">
                <img  width="1100" height="500" src="<?php echo base_url('assets/image/slide1.png') ?>" alt="Slide1">
                <div class="carousel-caption">
-                  <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
-                  <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a>                 
-                  <h3>GankBank</h3>
-                  <p>Transaksi aman dan terpercaya hanya di GankBank</p>
+                  <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5" style="margin-top:-500px">Login</a> 
+                  <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default"style="margin-top:-500px">Sign Up</a> 
+                  <div class="col-lg-5 card-text bg-white mx-auto text-left" style="border-radius:5px;border-left:10px solid blue;opacity: 0.8;">
+                     <h3 style="margin-top:-230px;color:blue;">GankBank</h3>
+                     <p style="color:blue;width:450px">Transaksi aman dan terpercaya hanya di GankBank</p>
+                  </div>                
                </div>
             </div>
             <div class="carousel-item">
                <img width="1100" height="500" src="<?php echo base_url('assets/image/slide11.png') ?>" alt="Slide2">
                <div class="carousel-caption">
-                  <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
-                  <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a> 
-                  <h3>GankBank</h3>
-                  <p>Banyak Untungnya Segera Bergabung dengan mendaftarkan diri anda.</p>
+                  <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5"style="margin-top:-500px">Login</a> 
+                  <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default"style="margin-top:-500px">Sign Up</a> 
+                  <div class="col-lg-5 card-text bg-white mx-auto text-left" style="border-radius:5px;border-left:10px solid blue;opacity:0.8">
+                     <h3 style="margin-top:-230px;color:blue;">GankBank</h3>
+                     <p style="color:blue;">Banyak Untungnya Segera Bergabung dengan mendaftarkan diri anda.</p>
+                  </div>
+                  
                </div>
             </div>
             <div class="carousel-item">
                <img width="1100" height="500" src="<?php echo base_url('assets/image/slide8.jpg') ?>" alt="slide3">
                <div class="carousel-caption">
-                  <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5 mb-3">Login</a> 
-                  <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default mb-3">Sign Up</a> 
-                  <h3>GankBank</h3>
-                  <p>Banyak Hadiah menanti anda tiap tahunnya</p>
-               </div>
+                  <a href="<?php echo base_url('Cuser/logPage') ?>" class="login btn btn-default mr-5"style="margin-top:-500px">Login</a> 
+                  <a href="<?php echo base_url('Cuser/sigPage') ?>" class="Signup btn btn-default"style="margin-top:-500px">Sign Up</a> 
+                  <div class="col-lg-5 card-text text-left bg-white mx-auto" style="border-radius:5px;border-left:10px solid blue;opacity:0.8">
+                     <h3 style="margin-top:-230px;color:blue">GankBank</h3>
+                     <p style="color:blue">Banyak Hadiah menanti anda tiap tahunnya</p>
+                  </div>
+                                 </div>
             </div>
          </div>
          <a class="carousel-control-prev" href="#demo"  data-slide="prev">
