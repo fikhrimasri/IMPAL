@@ -17,7 +17,7 @@
  
      <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
         <a class="navbar-brand"  href="<?php echo base_url('') ?>">
-            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="190px" height="45px">
+            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
         </a>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
            <li class="nav-item mr-3">
@@ -85,7 +85,7 @@
          </a>
      </div>
    </div>
-   <footer class="page-footer font-small" style="background-color:#0E0B2B;">
+   <footer class="page-footer font-small fixed-bottom" style="background-color:#0E0B2B;">
       <div class="footer-copyright text-center py-2 text-white" style="background-color:#0E0B2B;">
         <span>© 2019 Copyright : </span><span><a href="#"> gangbank.com</a></span>
       </div>

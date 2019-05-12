@@ -8,15 +8,15 @@
         </div>
         <div class="card-body" align="left">
           <div class="Form" >
-            <form action="INI_SUCCESS">
+            <form method="POST" action="<?php echo base_url('Cuser/save_password/'); ?>">
               <div class="form-group">
                 <label for="password">Password Lama :</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
+                <input type="password" class="form-control" id="pwd" name="old" placeholder="Enter Password">
               </div>
               <div class="form-group">
                 <label for="pwd">Password Baru :</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter New Password" style="margin-bottom:5px">
-                <input type="password" class="form-control" id="pwd" placeholder="Enter New Password">
+                <input type="password" class="form-control" id="pwd" name="new" placeholder="Enter New Password" style="margin-bottom:5px">
+                <input type="password" class="form-control" id="pwd" name="re_new" placeholder="Enter New Password">
               </div>
               <div class="modal" align="center" id="myModal" style="margin-top:170px">
                 <div class="modal-dialog">
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="card-footer bg-primary text-light" style="font-size:15px">
-          <span><a class="text-light" href="#">Login</a></span><span> | </span><span><a class="text-light" href="#">Sign Up</a></span>
+          <span><a class="text-light" href="<?php echo site_url('Cuser/logPage'); ?>">Login</a></span><span> | </span><span><a class="text-light" href="<?php echo site_url('Cuser/sigPage'); ?>">Sign Up</a></span>
         </div>
       </div>
     </div>

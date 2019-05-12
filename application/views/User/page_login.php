@@ -15,7 +15,7 @@
    <div class="pembungkus">
      <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
         <a class="navbar-brand"  href="<?php echo base_url('') ?>">
-            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="190px" height="45px">
+            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
         </a>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
            <li class="nav-item mr-3">
@@ -44,7 +44,7 @@
                   <label for="Buat_User" ><h3 id="LabelUser">Login Sebagai User</h3></label>
                <div class="card">
                   <div class="card-header bg-primary text-center">
-                     <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="logoankBank" width="150px" height="35px">
+                     <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="logoankBank" width="150px">
                   </div>
                   <div class="card-body">
                      <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cuser/signIn/'); ?>">
@@ -76,14 +76,14 @@
                <div class="card">
                   
                   <div class="card-header bg-primary text-center">
-                     <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="150px" height="35px" alt="">
+                     <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="150px" alt="">
                   </div>
                      <div class="card-body">
-                        <form action="">
+                        <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cadmin/signIn/'); ?>">
                               <label for="Username"style="color:white"><h6>Username</h6></label>
-                              <input type="text" class="form-control mb-2" placeholder="Username..." required>
+                              <input name ="username" type="text" class="form-control mb-2" placeholder="Username..." required>
                               <label for="Password"style="color:white"><h6>Password</h6></label>
-                              <input type="password" class="form-control mb-2" placeholder="Password..." required>
+                              <input name="password" type="password" class="form-control mb-2" placeholder="Password..." required>
                               <a href="#" style="color:white"><h6>Lupa Password?</h6></a>
                               <div class="cekbox mt-2">
                                  <label for="checkbox" class="checkbox pull-left">
@@ -109,7 +109,7 @@
      </div>
    </div>
 
-  <footer class="page-footer font-small" style="background-color:#0E0B2B;">
+  <footer class="page-footer font-small fixed-bottom" style="background-color:#0E0B2B;">
       <div class="footer-copyright text-center py-2 text-white" style="background-color:#0E0B2B;">
         <span>© 2019 Copyright : </span><span><a href="#"> gangbank.com</a></span>
       </div>

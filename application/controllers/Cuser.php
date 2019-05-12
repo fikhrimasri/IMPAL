@@ -28,6 +28,59 @@ class Cuser extends CI_Controller {
     {
       $this->load->view('user/page_UserHome');
     }
+    public function gantiPasswordPage()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_GantiPassword');
+      $this->load->view('page_footer');
+      }
+    public function hapusDataNasabahPage()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_hapusDataNasabah');
+      $this->load->view('page_footer');
+     }
+     public function updateDataNasabahPage()
+     {
+       $this->load->view('page_header');
+       $this->load->view('user/page_updateDataNasabah');
+       $this->load->view('page_footer');
+      }
+
+    public function gantipass()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_GantiPassword');
+      $this->load->view('page_footer');
+    }
+
+    public function ceksaldo()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_CekSaldo');
+      $this->load->view('page_footer');
+    }
+
+    public function history()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_HistoryTransaksi');
+      $this->load->view('page_footer');
+    }
+
+    public function virtual()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_RekeningVirtualPage1');
+      $this->load->view('page_footer');
+    }
+
+    public function transfer()
+    {
+      $this->load->view('page_header');
+      $this->load->view('user/page_TransferPage1');
+      $this->load->view('page_footer');
+    }
 
     public function addUser(){
       $this->form_validation->set_rules('username','username','required');
@@ -56,6 +109,28 @@ class Cuser extends CI_Controller {
         $this->session->sess_destroy();
         redirect(base_url(''));
     }
-
+    //masih belum jalan update password
+    public function save_password()
+    { 
+     $this->form_validation->set_rules('old', 'old', 'required');
+     $this->form_validation->set_rules('new','New','required');
+     $this->form_validation->set_rules('re_new', 'Retype New', 'required|matches[new]');
+       if($this->form_validation->run() == FALSE)
+     {
+      redirect(site_url('Cuser/gantipass'));
+     }else{
+      $cek_old = $this->M_user->cek_old();
+      if ($cek_old == False){
+       $this->session->set_flashdata('error','Old password not match!' );
+       redirect(site_url('Cuser/gantipass'));
+      }else{
+       $this->M_user->save();
+       $this->session->sess_destroy();
+      //  $this->session->set_userdata('password',$user['password']);
+       $this->session->set_flashdata('error','Your password success to change, please relogin !' );
+       redirect(site_url('Cuser/logPage'));
+      }//end if valid_user
+     }
     }
+}
     
