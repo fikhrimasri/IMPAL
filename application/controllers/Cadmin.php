@@ -26,7 +26,8 @@ class Cadmin extends CI_Controller {
 
     public function datanasabah()
     {
-      $this->load->view('admin/page_NasabahAdmin');
+      // $this->load->view('admin/page_NasabahAdmin');
+      $this->load->view('page_header_admin');
       $this->load->view('page_footer');
     }
 
@@ -39,6 +40,49 @@ class Cadmin extends CI_Controller {
           redirect(site_url('Cadmin/logPage'));
         }
       }
+
+      public function nasabah()
+      {
+        $data_nasabah = $this->M_admin->Getnasabah_rek();
+        $this->load->view('page_header_admin');
+        $this->load->view('admin/page_datanasabah',['data'=>$data_nasabah]);
+      }
+
+      public function hapusnasabah($no_rekening)
+      {
+        $this->M_admin->hapus_nasabah($no_rekening);
+        redirect('Cadmin/nasabah');	
+      }
+
+      public function tambahnasabah()
+      {
+        $no_rekening = $this->input->post('rek');
+        $saldo = $this->input->post('saldo');
+        $data = array(
+          'no_rekening' => $no_rekening,
+          'saldo' => $saldo,
+        );
+        $this->M_admin->tambah_nasabah($data);
+    
+        redirect('Cadmin/nasabah');	
+    
+      }
+
+      public function editnasabah()
+      {
+        $no_rekening = $this->input->post('rek');
+        $saldo = $this->input->post('saldo');
+        $data = array(
+          'no_rekening' => $no_rekening,
+          'saldo' => $saldo,
+        );
+        $this->M_admin->edit_nasabah($no_rekening,$data);
+    
+        redirect('Cadmin/nasabah');	
+      }
+
+      
+    
 
       public function logOut(){
         $this->session->sess_destroy();

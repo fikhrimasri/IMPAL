@@ -62,7 +62,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6 mx-auto">
-                <a href="<?php echo base_url('Cadmin/datanasabah') ?>"class="btn btn-primary" type="button">Check Data Nasabah</a>
+                <a href="<?php echo base_url('Cadmin/nasabah') ?>"class="btn btn-primary" type="button">Check Data Nasabah</a>
               </div>
             </div>
           </div>
