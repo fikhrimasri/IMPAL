@@ -7,7 +7,7 @@
           Rekening Virtual
         </div>
         <div class="card-body" align="left">
-          <div class="Form" >
+          <div class="Form">
             <form action="INI_SUCCESS">
               <div class="form-group">
                 <label>Kode Bank :</label>
