@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B; height: 70px" >
       <ul class="navbar-nav">
           <li class="nav-item">
-              <a class="navbar-brand"  href="<?php echo base_url('') ?>">
+              <a class="navbar-brand"  href="<?php echo base_url('Cadmin/homeAdminPage') ?>">
                   <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px" style="margin-left:-40px; margin-top:-3px">
               </a>
           </li>

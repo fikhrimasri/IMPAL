@@ -57,9 +57,15 @@ class Cadmin extends CI_Controller {
       public function tambahnasabah()
       {
         $no_rekening = $this->input->post('rek');
+        $username = $this->input->post('username');
+        $umur = $this->input->post('umur');
+        $nama = $this->input->post('nama');
         $saldo = $this->input->post('saldo');
         $data = array(
           'no_rekening' => $no_rekening,
+          'username' => $username,
+          'umur' => $umur,
+          'nama' => $nama,
           'saldo' => $saldo,
         );
         $this->M_admin->tambah_nasabah($data);
@@ -71,9 +77,15 @@ class Cadmin extends CI_Controller {
       public function editnasabah()
       {
         $no_rekening = $this->input->post('rek');
+        $username = $this->input->post('username');
+        $umur = $this->input->post('umur');
+        $nama = $this->input->post('nama');
         $saldo = $this->input->post('saldo');
         $data = array(
           'no_rekening' => $no_rekening,
+          'username' => $username,
+          'umur' => $umur,
+          'nama' => $nama,
           'saldo' => $saldo,
         );
         $this->M_admin->edit_nasabah($no_rekening,$data);

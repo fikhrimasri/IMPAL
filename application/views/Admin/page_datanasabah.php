@@ -9,6 +9,9 @@
           <tr>
             <th>No</th>
             <th>No Rekening</th>
+            <th>Username</th>
+            <th>Nama</th>
+            <th>Umur</th>
             <th>Saldo</th>
             <th>Edit</th>
             <th>Hapus</th>
@@ -21,6 +24,9 @@
             <form action="">
               <td><?php echo $no++ ?></td>
               <td><?php echo $d->no_rekening ?></td>
+              <td><?php echo $d->username ?></td>
+              <td><?php echo $d->nama ?></td>
+              <td><?php echo $d->umur ?> Tahun</td>
               <td><?php echo $d->saldo ?></td>
 
               <!--BUTTON EDIT MAHASISWA-->
@@ -45,11 +51,22 @@
         <!-- isi form ini -->
         <form method="post" action="<?php echo base_url('Cadmin/editnasabah/'); ?>">
         <input type="hidden" class="form-control" id="formGroupExampleInput" placeholder="No Rekening" name="rek" value="<?php echo $d->no_rekening ?>"  required>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Username</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="<?php echo $d->username ?>" name="username"  value="<?php echo $d->username ?>" readonly>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Umur</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Umur" name="umur"  value="<?php echo $d->umur ?>" required>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Nama</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama" name="nama"  value="<?php echo $d->nama ?>" required>
+          </div>
           <div class="form-group">
             <label for="formGroupExampleInput">Saldo</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Saldo" name="saldo"  value="<?php echo $d->saldo ?>" required>
-          </div>
-            </select>            
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="<?php echo $d->saldo ?>" name="saldo"  value="<?php echo $d->saldo ?>" readonly>
+          </div>        
           </div>
         </div>
         <div class="modal-footer">
@@ -76,9 +93,21 @@
           <input type="number" class="form-control" id="formGroupExampleInput" placeholder="No Rekening" name="rek" required >
         </div>
         <div class="form-group">
+          <label for="formGroupExampleInput">Username</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username" name="username"required>
+        </div> 
+        <div class="form-group">
+          <label for="formGroupExampleInput">Nama</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama" name="nama"required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Umur</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Umur" name="umur"required>
+        </div> 
+        <div class="form-group">
           <label for="formGroupExampleInput">Saldo</label>
           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Saldo" name="saldo"required>
-        </div>          
+        </div>              
         </div>
       </div>
       <div class="modal-footer">
