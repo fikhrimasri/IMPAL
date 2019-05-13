@@ -11,7 +11,6 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    <style>  
       .main{
-        background:url(assets/image/slide6.jpg);
         background-repeat:no-repeat ;
         background-size: cover;
         background-position:0 70px;  
@@ -21,7 +20,7 @@
 </head>
 
 <body>
-  <div class="main">
+  <div class="main"style="background:url(<?php echo base_url('assets/image/slide6.jpg')?>);">
     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
       <ul class="navbar-nav">
           <li class="nav-item">
@@ -67,12 +66,26 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <!-- <div class="col-md-6">s
                 <a href="<?php echo base_url();?>Cuser/gantipass" class="btn btn-primary vv" type="button">Ubah Password</a>
+              </div> -->
+              <div class="col-md-12">
+                <a href="<?php echo base_url();?>Cuser/ceksaldo" class="btn btn-primary vv" type="button" style="width:310px">Cek Saldo</a>
               </div>
-              <div class="col-md-6">
-                <a href="<?php echo base_url();?>Cuser/ceksaldo" class="btn btn-primary vv" type="button">Cek Saldo</a>
-              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <p class="labelmenu text-light">TRANSAKSI</p>
+            <img class="menugambar" src="<?php echo base_url('assets/image/m_transaksi.png') ?>" alt="">
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="<?php echo base_url();?>Cuser/virtual" class="btn btn-primary vv" type="button">Virtual Account</a>
+            </div>
+            <div class="col-md-6">
+              <a href="<?php echo base_url();?>Cuser/transfer" class="btn btn-primary vv" type="button">Transfer</a>
             </div>
           </div>
         </div>
@@ -84,20 +97,6 @@
           <div class="row">
             <div class="col-md-12">
               <a href="<?php echo base_url();?>Cuser/history" class="btn btn-primary" type="button" style="width:310px">Lihat History</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div>
-            <p class="labelmenu text-light">TRANSFER</p>
-            <img class="menugambar" src="<?php echo base_url('assets/image/m_transaksi.png') ?>" alt="">
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="<?php echo base_url();?>Cuser/virtual" class="btn btn-primary vv" type="button">Virtual Account</a>
-            </div>
-            <div class="col-md-6">
-              <a href="<?php echo base_url();?>Cuser/transfer" class="btn btn-primary vv" type="button">Transfer</a>
             </div>
           </div>
         </div>

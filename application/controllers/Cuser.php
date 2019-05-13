@@ -71,14 +71,14 @@ class Cuser extends CI_Controller {
     public function virtual()
     {
       $this->load->view('page_header');
-      $this->load->view('user/page_RekeningVirtualPage1');
+      $this->load->view('user/page_RekeningVirtualPage');
       $this->load->view('page_footer');
     }
 
     public function transfer()
     {
       $this->load->view('page_header');
-      $this->load->view('user/page_TransferPage1');
+      $this->load->view('user/page_TransferPage');
       $this->load->view('page_footer');
     }
 

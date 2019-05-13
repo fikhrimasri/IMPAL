@@ -11,7 +11,7 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-   <div class="pembungkus1">
+   <div class="pembungkus1" style="background:url(<?php echo base_url('assets/image/slide6.jpg')?>);">
 
   
      <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
@@ -85,7 +85,6 @@
 <style>
   
 .pembungkus1{
-  background:url(assets/image/slide6.jpg);
   background-repeat:no-repeat ;
   background-size: cover;
   background-position:0 70px;

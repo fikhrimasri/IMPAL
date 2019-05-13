@@ -11,17 +11,16 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    <style>  
       .main{
-        background:url(assets/image/slide6.jpg);
-        background-repeat:no-repeat ;
+        background-repeat:no-repeat;
         background-size: cover;
-        background-position:0 70px;  
+        background-position:20 -120px;  
         height: 100vh;
       }
    </style>
 </head>
 
 <body>
-  <div class="main">
+  <div class="main" style="background:url(<?php echo base_url('assets/image/slide6.jpg')?>);">
     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
       <ul class="navbar-nav">
           <li class="nav-item">
@@ -81,7 +80,7 @@
     </nav>
     <div id="mySidenav" class="sidenav">
       <div style="margin-top:-50px">
-          <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/user.png') ?>" width="15"></span><span style=" margin-left: 15px"><?php echo $this->session->userdata("username"); ?></span></a>
+          <a class="dropdown-item" href="<?php echo base_url();?>Cuser/gantipass" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/user.png') ?>" width="15"></span><span style=" margin-left: 15px"><?php echo $this->session->userdata("username"); ?></span></a>
           <a class="dropdown-item" href="<?php echo base_url();?>Cuser/history" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/berkas.png') ?>" width="15"></span><span style=" margin-left: 15px">History</span> </a>
           <a class="dropdown-item" href="#" style="font-size: 15px ;"><span><img style=" margin-left: 15px" src="<?php echo base_url('assets/image/Transaction.png') ?>" width="15"></span><span style=" margin-left: 15px">Transaksi</span></a>
       </div>

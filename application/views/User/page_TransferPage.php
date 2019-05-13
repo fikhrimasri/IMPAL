@@ -2,17 +2,16 @@
       <div class="HeadLabel">
         <img src="assets/image/LOGO.png" style="height:70px; margin-top:10px" alt="">
       </div>
-      <div class="card" style="margin-top:10px; width:400px; height: 380px">
+      <div class="card" style="margin-top:10px; width:400px; height: 420px">
         <div class="card-header bg-primary text-light">
           Rekening Virtual
         </div>
         <div class="card-body" align="left">
           <div class="Form" >
             <form action="INI_SUCCESS">
-              <div align="center">
-                  <div class="card" style="width:360px; height:40px; margin-bottom:7px">
-                    <img src=" " alt="">INI LOGO BANK
-                  </div>
+              <div class="form-group">
+                <label>Kode Bank :</label>
+                <input type="text" class="form-control" placeholder="Enter Bank Code">
               </div>
               <div class="form-group">
                 <label>No Rekening :</label>

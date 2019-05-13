@@ -12,7 +12,7 @@
   
 </head>
 <body>
-   <div class="pembungkus">
+   <div class="pembungkus"style="background:url(<?php echo base_url('assets/image/slide6.jpg')?>);">
      <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
         <a class="navbar-brand"  href="<?php echo base_url('') ?>">
             <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
