@@ -80,14 +80,10 @@
             <p class="labelmenu text-light">TRANSAKSI</p>
             <img class="menugambar" src="<?php echo base_url('assets/image/m_transaksi.png') ?>" alt="">
           </div>
-          <div class="row">
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <a href="<?php echo base_url();?>Cuser/virtual" class="btn btn-primary vv" type="button">Virtual Account</a>
-            </div>
-            <div class="col-md-6">
-              <a href="<?php echo base_url();?>Cuser/test" class="btn btn-primary vv" type="button">Transfer</a>
-            </div>
-          </div>
+            </div> -->
+              <a href="<?php echo base_url();?>Cuser/test" class="btn btn-primary" type="button" style="width:310px">Transfer</a>
         </div>
         <div class="col-md-4">
           <div>
