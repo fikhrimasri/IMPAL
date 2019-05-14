@@ -71,4 +71,13 @@ class M_user extends CI_model
         return $query->result();
     }
 
+    public function history()
+    {
+        $this->db->select('no_transaksi, no_rek_penerima, jumlah, tanggal');
+        $this->db->from('transaksi');
+        $this->db->where('username', $this->session->userdata('username'));
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 }

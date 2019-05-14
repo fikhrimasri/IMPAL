@@ -140,5 +140,14 @@ class Cuser extends CI_Controller {
       $this->load->view('user/page_CekSaldo', ['data'=>$data_saldo]);
       $this->load->view('page_footer');
     }
+
+    public function history_user()
+    {
+      $data_history = $this->M_user->history();
+      $this->load->view('page_header');
+      $this->load->view('user/page_HistoryTransaksi', ['data'=>$data_history]);
+      $this->load->view('page_footer');
+    }
+
 }
     

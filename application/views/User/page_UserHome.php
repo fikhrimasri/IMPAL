@@ -96,7 +96,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <a href="<?php echo base_url();?>Cuser/history" class="btn btn-primary" type="button" style="width:310px">Lihat History</a>
+              <a href="<?php echo base_url();?>Cuser/history_user" class="btn btn-primary" type="button" style="width:310px">Lihat History</a>
             </div>
           </div>
         </div>

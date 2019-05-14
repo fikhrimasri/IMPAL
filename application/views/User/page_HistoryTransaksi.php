@@ -10,32 +10,23 @@
             <table class="table table-dark table-hover">
                 <thead>
                   <tr>
-                    <th>Tanggal</th>
+                    <th>No</th>
                     <th>No Transaksi</th>
-                    <th>Total</th>
+                    <th>No Rekening Penerima</th>
+                    <th>Jumlah</th>
+                    <th>Tanggal</th>
                   </tr>
                 </thead>
                 <tbody>
+                <?php $no=1; foreach ($data as $d ) {?>
                   <tr>
-                    <td>05-05-2017</td>
-                    <td>P11222333</td>
-                    <td>20.000.000</td>
+                    <td><?php echo $no++?></td>
+                    <td><?php echo $d->no_transaksi?></td>
+                    <td><?php echo $d->no_rek_penerima ?></td>
+                    <td><?php echo $d->jumlah ?></td>
+                    <td><?php echo $d->tanggal ?></td>
                   </tr>
-                  <tr>
-                    <td>05-05-2017</td>
-                    <td>P11222333</td>
-                    <td>20.000.000</td>
-                  </tr>
-                  <tr>
-                    <td>05-05-2017</td>
-                    <td>P11222333</td>
-                    <td>20.000.000</td>
-                  </tr>
-                  <tr>
-                    <td>05-05-2017</td>
-                    <td>P11222333</td>
-                    <td>20.000.000</td>
-                  </tr>
+                <?php } ?>
                   </tbody>
               </table>
         </div>
