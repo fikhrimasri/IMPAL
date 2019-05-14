@@ -41,7 +41,9 @@
      <div class="container">  
          <div class="Isi row mt-5 mb-5">
             <div class="User col-lg-4">
+               <div align="center">
                   <label for="Buat_User" ><h3 id="LabelUser">Login Sebagai User</h3></label>
+               </div>
                <div class="card">
                   <div class="card-header bg-primary text-center">
                      <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="logoankBank" width="150px">
@@ -72,33 +74,36 @@
                </div>
             </div>
             <div class="Admin col-lg-4 ml-auto">
+               <div align="center">
                   <label for="loginAdmin" ><h3 id="LabelAdmin">Login Sebagai Admin</h3></label>
+               </div>
                <div class="card">
                   
                   <div class="card-header bg-primary text-center">
                      <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="150px" alt="">
                   </div>
-                     <div class="card-body">
-                        <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cadmin/signIn/'); ?>">
-                              <label for="Username"style="color:white"><h6>Username</h6></label>
-                              <input name ="username" type="text" class="form-control mb-2" placeholder="Username..." required>
-                              <label for="Password"style="color:white"><h6>Password</h6></label>
-                              <input name="password" type="password" class="form-control mb-2" placeholder="Password..." required>
-                              <br>
-                              <div class="cekbox mt-2">
-                                 <label for="checkbox" class="checkbox pull-left">
-                                       <input type="checkbox">
-                                       <span style="color:black"> remember me</span>
-                                 </label>
-                                 
-                              </div>
-                              <div class="text-center">
-                                 <input type="submit" class="btn btn-primary" value="Login"style="border-radius:10px">
-                              </div>
-                        </form>
+                  <div class="card-body">
+                     <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cadmin/signIn/'); ?>">
+                           <label for="Username"style="color:white"><h6>Username</h6></label>
+                           <input name ="username" type="text" class="form-control mb-2" placeholder="Username..." required>
+                           <label for="Password"style="color:white"><h6>Password</h6></label>
+                           <input name="password" type="password" class="form-control mb-2" placeholder="Password..." required>
+                           <br>
+                           <div class="cekbox mt-2">
+                              <label for="checkbox" class="checkbox pull-left">
+                                    <input type="checkbox">
+                                    <span style="color:black"> remember me</span>
+                              </label>
+                              
+                           </div>
+                           <div class="text-center">
+                              <input type="submit" class="btn btn-primary" value="Login"style="border-radius:10px">
+                           </div>
+                     </form>
+                  </div>
+                  <div class="card-footer bg-primary" style="height:50px">
+                  </div>
                </div>
-
-            </div>
          </div>
      </div>
    </div>

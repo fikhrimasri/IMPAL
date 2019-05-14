@@ -27,7 +27,7 @@
                       <div class="modal-content">
                           <div class="modal-header">
                           <div  class="modal-title" align="center">
-                              <span><img src="assets/image/alert.png" style="height: 40px" alt=""></span><span> Perhatian</span>
+                              <span><img src="<?php echo base_url('assets/image/alert.png'); ?>" style="height: 40px" alt=""></span><span> Perhatian</span>
                           </div>
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
                           </div>
