@@ -1,6 +1,6 @@
     <div class="container" align="center">
       <div class="HeadLabel">
-        <img src="assets/image/LOGO.png" style="height:70px; margin-top:10px" alt="">
+        <img src="<?php echo base_url('assets/image/LOGO.png'); ?>" style="height:70px; margin-top:10px" alt="">
       </div>
       <div class="card" style="margin-top:10px; width:400px; height: 420px">
         <div class="card-header bg-primary text-light">

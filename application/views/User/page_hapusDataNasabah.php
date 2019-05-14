@@ -1,6 +1,6 @@
 <div class="container" align="center">
   <div class="HeadLabel">
-    <img src="assets/image/LOGO.png" style="height:70px; margin-top:10px" alt="">
+    <img src="<?php echo base_url('assets/image/LOGO.png'); ?>" style="height:70px; margin-top:10px" alt="">
   </div>
   <h1>Halaman Hapus Data Nasabah</h1>
   <div class="card" style="margin-top:10px; width:400px; height: 300px">
