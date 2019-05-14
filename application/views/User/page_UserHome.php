@@ -85,7 +85,7 @@
               <a href="<?php echo base_url();?>Cuser/virtual" class="btn btn-primary vv" type="button">Virtual Account</a>
             </div>
             <div class="col-md-6">
-              <a href="<?php echo base_url();?>Cuser/transfer" class="btn btn-primary vv" type="button">Transfer</a>
+              <a href="<?php echo base_url();?>Cuser/test" class="btn btn-primary vv" type="button">Transfer</a>
             </div>
           </div>
         </div>

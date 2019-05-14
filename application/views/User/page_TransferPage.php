@@ -9,9 +9,15 @@
         <div class="card-body" align="left">
           <div class="Form">
             <form method="POST" action="<?php echo base_url('Cuser/transferjum/'); ?>">
+            <?php $no=1; foreach ($data as $d ) {?>
+            <div class="form-group">
+                <label>No Rekening :</label>
+                <input name="rek1" type="number" class="form-control" value=<?php echo $d->no_rekening?> readonly>
+              </div>
+            <?php } ?>
               <div class="form-group">
                 <label>No Rekening :</label>
-                <input name="rek" type="text" class="form-control" placeholder="Enter Rekening Number">
+                <input name="rek" type="number" class="form-control" placeholder="Enter Rekening Number">
               </div>
               <div class="form-group">
                 <label>Jumlah Transfer :</label>

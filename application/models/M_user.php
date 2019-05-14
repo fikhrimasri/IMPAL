@@ -175,5 +175,14 @@ class M_user extends CI_model
         }
 
     }
+
+    public function test()
+    {
+        $this->db->select('no_rekening');
+        $this->db->from('nasabah');
+        $this->db->where('username', $this->session->userdata('username'));
+        $query = $this->db->get();
+        return $query->result();
+    }
     
 }

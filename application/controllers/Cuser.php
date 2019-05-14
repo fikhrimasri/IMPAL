@@ -75,10 +75,18 @@ class Cuser extends CI_Controller {
       $this->load->view('page_footer');
     }
 
-    public function transfer()
+    // public function transfer()
+    // {
+    //   $this->load->view('page_header');
+    //   $this->load->view('user/page_TransferPage');
+    //   $this->load->view('page_footer');
+    // }
+
+    public function test()
     {
+      $data_rek = $this->M_user->test();
       $this->load->view('page_header');
-      $this->load->view('user/page_TransferPage');
+      $this->load->view('user/page_TransferPage',['data'=>$data_rek]);
       $this->load->view('page_footer');
     }
 
@@ -168,17 +176,17 @@ class Cuser extends CI_Controller {
             $user = $this->M_user->findrek();
             if($user != FALSE){
               $receiver = $this->input->post('rek');
-              $sender_id = 1301164662;
-              $amount = 10000;
+              $sender_id = $this->input->post('rek');
+              $amount = $this->input->post('jum');
               $jumlah = $this->input->post('jum');
-              $sender = 1301164663; 
+              $sender = $this->input->post('rek1'); 
               $this->M_user->transfer($amount, $sender, $sender_id);
               $this->M_user->updateT();
               // $this->M_user->updateSaldo();
               // $this->M_user->updateSaldoPenerima();
               redirect(site_url('Cuser/homeUserPage'));
             }else{
-              redirect(site_url('Cuser/transfer'));
+              redirect(site_url('Cuser/test'));
             }
         }
       }
