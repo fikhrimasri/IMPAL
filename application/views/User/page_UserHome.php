@@ -70,7 +70,7 @@
                 <a href="<?php echo base_url();?>Cuser/gantipass" class="btn btn-primary vv" type="button">Ubah Password</a>
               </div> -->
               <div class="col-md-12">
-                <a href="<?php echo base_url();?>Cuser/ceksaldo" class="btn btn-primary vv" type="button" style="width:310px">Cek Saldo</a>
+                <a href="<?php echo base_url();?>Cuser/check_saldo" class="btn btn-primary vv" type="button" style="width:310px">Cek Saldo</a>
               </div>
             </div>
           </div>

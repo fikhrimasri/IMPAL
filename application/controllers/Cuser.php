@@ -132,5 +132,13 @@ class Cuser extends CI_Controller {
       }//end if valid_user
      }
     }
+
+    public function check_saldo()
+    {
+      $data_saldo = $this->M_user->check_saldo();
+      $this->load->view('page_header');
+      $this->load->view('user/page_CekSaldo', ['data'=>$data_saldo]);
+      $this->load->view('page_footer');
+    }
 }
     

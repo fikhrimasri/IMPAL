@@ -6,12 +6,14 @@
         <div class="card-header bg-primary text-light" style="margin-top:30px">
           Jumlah Saldo Anda
         </div>
+        <?php $no=1; foreach ($data as $d ) {?>
         <div class="card-body">
           <div class="Saldo" style="margin-top:40px">
             <style>.inisaldo{font-size: 40px}</style>
-            <span class="inisaldo">Rp : </span><span class="inisaldo">2.000.000</span>
+            <span class="inisaldo">Rp : </span><span class="inisaldo"><?php echo $d->saldo?></span>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <?php } ?>

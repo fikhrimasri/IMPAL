@@ -62,4 +62,13 @@ class M_user extends CI_model
             return $query->result();;
     }
 
+    public function check_saldo()
+    {
+        $this->db->select('saldo');
+        $this->db->from('nasabah');
+        $this->db->where('username', $this->session->userdata('username'));
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 }
