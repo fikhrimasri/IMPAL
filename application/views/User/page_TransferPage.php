@@ -8,18 +8,14 @@
         </div>
         <div class="card-body" align="left">
           <div class="Form">
-            <form action="INI_SUCCESS">
-              <div class="form-group">
-                <label>Kode Bank :</label>
-                <input type="text" class="form-control" placeholder="Enter Bank Code">
-              </div>
+            <form method="POST" action="<?php echo base_url('Cuser/transferjum/'); ?>">
               <div class="form-group">
                 <label>No Rekening :</label>
-                <input type="text" class="form-control" placeholder="Enter Rekening Number">
+                <input name="rek" type="text" class="form-control" placeholder="Enter Rekening Number">
               </div>
               <div class="form-group">
                 <label>Jumlah Transfer :</label>
-                <input type="number" class="form-control" placeholder="Enter Mount">
+                <input name="jum" type="number" class="form-control" placeholder="Enter Mount">
               </div>
               <div class="modal" align="center" id="myModal" style="margin-top:170px">
                 <div class="modal-dialog">
