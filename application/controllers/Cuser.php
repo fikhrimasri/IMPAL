@@ -156,17 +156,23 @@ class Cuser extends CI_Controller {
         if($this->form_validation->run() == FALSE)
         {
           redirect(site_url('Cuser/transfer'));
-        }else{
-        $tujuan = $this->input->post('rek');
-        $jumlah = $this->input->post('jum');
-        $sal = $this->M_user->get_saldo();
-        $akhir = (int)$sal-(int)$jumlah;
-          if($akhir>0){
-            redirect(site_url('Cuser/transfer'));
+        // }else{
+        // $tujuan = $this->input->post('rek');
+        // $jumlah = $this->input->post('jum');
+        // $sal = $this->M_user->get_saldo();
+        // $akhir = (int)$sal-(int)$jumlah;
+        //   if($akhir>0){
+        //     redirect(site_url('Cuser/transfer'));
           }else{
             // $rek = $this->M_user->get_rekening();
             $user = $this->M_user->findrek();
             if($user != FALSE){
+              $receiver = $this->input->post('rek');
+              $sender_id = 1301164662;
+              $amount = 10000;
+              $jumlah = $this->input->post('jum');
+              $sender = 1301164663; 
+              $this->M_user->transfer($amount, $sender, $sender_id);
               $this->M_user->updateT();
               // $this->M_user->updateSaldo();
               // $this->M_user->updateSaldoPenerima();
@@ -178,5 +184,4 @@ class Cuser extends CI_Controller {
       }
 
     }
-}
     

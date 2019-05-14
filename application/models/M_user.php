@@ -96,20 +96,20 @@ class M_user extends CI_model
         // return $rekening_tujuan->result();
     }
 
-    public function get_rekening()
-    {
-        $this->db->select('no_rekening');
-        $this->db->from('nasabah');
-        $rek = $this->db->get();
-        // if ($rek->num_rows() > 0) {
-        //     foreach ($query->result() as $row) 
-        //     {
-        //     $data[] = $row;
-        //     }
-        //     return $data;
-        //     }    
-        return $rek->result();
-    }
+    // public function get_rekening()
+    // {
+    //     $this->db->select('no_rekening');
+    //     $this->db->from('nasabah');
+    //     $rek = $this->db->get();
+    //     // if ($rek->num_rows() > 0) {
+    //     //     foreach ($query->result() as $row) 
+    //     //     {
+    //     //     $data[] = $row;
+    //     //     }
+    //     //     return $data;
+    //     //     }    
+    //     return $rek->result();
+    // }
 
     public function updateT()
     {
@@ -124,18 +124,17 @@ class M_user extends CI_model
         // $this->db->update('nasabah', $akhir);
     }
 
-    public function updateSaldo($akhir)
-    {
-        $data = array (
-        'saldo' => $akhir
-        );
-        $this->db->where('username', $this->session->userdata('username'));
-        $this->db->update('nasabah', $saldo);
-    }
+    // public function updateSaldo($akhir)
+    // {
+    //     $data = array (
+    //     'saldo' => $akhir
+    //     );
+    //     $this->db->where('username', $this->session->userdata('username'));
+    //     $this->db->update('nasabah', $saldo);
+    // }
 
     public function findRek(){
-        $rekTuj = $this->input->post('rek');
-        
+        $rekTuj = $this->input->post('rek');   
         $this->db->select('no_rekening');
         $this->db->from('nasabah');
         $this->db->where('no_rekening',$rekTuj);
@@ -147,13 +146,34 @@ class M_user extends CI_model
         }
     }
 
-    public function updateSaldoPenerima($jumlah,$tujuan)
-    {
-        $data = array (
-        'saldo' => $jumlah
-        );
-        $this->db->where('no_rekening', $tujuan);
-        $this->db->update('nasabah', $akhir);
-    }
+    // public function updateSaldoPenerima($jumlah,$tujuan)
+    // {
+    //     $data = array (
+    //     'saldo' => $jumlah
+    //     );
+    //     $this->db->where('no_rekening', $tujuan);
+    //     $this->db->update('nasabah', $akhir);
+    // }
+    public function transfer($amount, $from, $to)
+    {   
+        // $jumlah = $this->input->post('jum');
+        // $user = $this->db->select('username');
+        // $this->db->from('nasabah');
+        // $this->db->where('username',$this->session->userdata('username'));
+        // $this->db->get();
+        $sender = 'update nasabah SET saldo = saldo - ? where no_rekening = ?';
+        $receiver = 'update nasabah SET saldo = saldo + ? where no_rekening = ?';
+        $this->db->trans_start();
+        $this->db->query($sender, array($amount, $from));
+        $this->db->query($receiver, array($amount, $to));
+        $this->db->trans_complete();
 
+        if ($this->db->trans_status() == false){
+            echo 'rollback!';
+        }else{
+            echo 'commited!';
+        }
+
+    }
+    
 }
