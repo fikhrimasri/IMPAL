@@ -92,9 +92,13 @@ class Cadmin extends CI_Controller {
     
         redirect('Cadmin/nasabah');	
       }
-
       
-    
+      public function history()
+      {
+        $data_history = $this->M_admin->Getransaksi();
+        $this->load->view('page_header_admin');
+        $this->load->view('admin/page_history', ['data'=>$data_history]);
+      }
 
       public function logOut(){
         $this->session->sess_destroy();

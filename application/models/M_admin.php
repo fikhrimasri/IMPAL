@@ -45,4 +45,11 @@ class M_admin extends CI_model
 		$this->db->insert('nasabah',$data);
 	    return;
 	}
+
+	public function Getransaksi(){
+        $this->db->select('no_transaksi, username, no_rek_penerima, tanggal, jumlah');
+        $this->db->from('transaksi');
+        $query = $this->db->get();
+        return $query->result();
+      }
 }

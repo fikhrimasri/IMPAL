@@ -85,7 +85,7 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <button class="btn btn-primary vv ml-4" style="width:310px">Lihat Transaksi Nasabah</button>
+              <a href="<?php echo base_url('Cadmin/history') ?>" class="btn btn-primary vv ml-4" type="button" style="width:310px">Lihat Transaksi Nasabah</a>
             </div>
           </div>
         </div>
