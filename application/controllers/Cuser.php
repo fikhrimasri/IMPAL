@@ -83,9 +83,9 @@ class Cuser extends CI_Controller {
     }
 
     public function addUser(){
-      $this->form_validation->set_rules('username','username','required');
-      $this->form_validation->set_rules('email','email','required');
-      $this->form_validation->set_rules('password','password','required');
+      $this->form_validation->set_rules('username','username','required|min_length[5]|max_length[20]');
+      $this->form_validation->set_rules('email','email','required|valid_email');
+      $this->form_validation->set_rules('password','password','required|min_length[5]|max_length[20]');
   
       if($this->form_validation->run()==FALSE){
           redirect('Cuser/sigPage');
@@ -112,8 +112,8 @@ class Cuser extends CI_Controller {
     
     public function save_password()
     { 
-     $this->form_validation->set_rules('old', 'old', 'required');
-     $this->form_validation->set_rules('new','New','required');
+     $this->form_validation->set_rules('old', 'old', 'required|min_length[5]|max_length[20]');
+     $this->form_validation->set_rules('new','New','required|min_length[5]|max_length[20]');
      $this->form_validation->set_rules('re_new', 'Retype New', 'required|matches[new]');
        if($this->form_validation->run() == FALSE)
      {
