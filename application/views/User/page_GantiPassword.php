@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="card-footer bg-primary text-light" style="font-size:15px">
-          <span><a class="text-light" href="<?php echo site_url('Cuser/logPage'); ?>">Login</a></span><span> | </span><span><a class="text-light" href="<?php echo site_url('Cuser/sigPage'); ?>">Sign Up</a></span>
+          <!-- <span><a class="text-light" href="<?php echo site_url('Cuser/logPage'); ?>">Login</a></span><span> | </span><span><a class="text-light" href="<?php echo site_url('Cuser/sigPage'); ?>">Sign Up</a></span> -->
         </div>
       </div>
     </div>
