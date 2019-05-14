@@ -10,7 +10,7 @@ class M_user extends CI_model
 			"password" => md5($this->input->post('password'))
         );
 
-        if($this->isExist($data['email'])) {
+        if($this->isExist($data['username'])) {
             return false;
         } else {
             $this->db->insert('akun', $data);
@@ -18,8 +18,8 @@ class M_user extends CI_model
         };
     }
 
-    public function isExist($email){
-        $this->db->where('email',$email);
+    public function isExist($username){
+        $this->db->where('username',$username);
         $result = $this->db->get('akun')->result_array();
         if(isset($result[0])){
             return true;
