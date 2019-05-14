@@ -11,7 +11,6 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    <style>  
       .main{
-        background:url(image/slide6.jpg);
         background-repeat:no-repeat ;
         background-size: cover;
         background-position:0 70px;  
@@ -21,7 +20,7 @@
 </head>
 
 <body>
-  <div class="main">
+  <div class="main" style="background:url(<?php echo base_url('assets/image/slide6.jpg') ?>);">
     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
       <ul class="navbar-nav">
           <li class="nav-item">
@@ -54,40 +53,19 @@
     <div class="container" align="center">
       <div class="row divide" style="margin-top:90px">
         <style>.menugambar{height: 250px; margin-bottom: -20px} .labelmenu{font-size: 30px; margin-bottom:-25px} .vv{width: 150px}</style>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div>
             <p class="labelmenu text-light">Data Nasabah</p>
             <img class="menugambar" src="<?php echo base_url('assets/image/m_akun.png') ?>" alt="">
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 mx-auto">
-                <a href="<?php echo base_url('Cadmin/nasabah') ?>"class="btn btn-primary" type="button">Check Data Nasabah</a>
-              </div>
-            </div>
-          </div>
+          <a href="<?php echo base_url('Cadmin/nasabah') ?>"class="btn btn-primary" type="button" style="width:310px">Check Data Nasabah</a>
         </div>
-        <!-- <div class="col-md-4">
-          <div>
-            <p class="labelmenu text-light">Update Data Nasabah</p>
-            <img class="menugambar" src="<?php echo base_url('assets/image/m_history.png') ?>" alt="">
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <button class="btn btn-primary" style="width:310px">Update Data Nasabah</button>
-            </div>
-          </div>
-        </div> -->
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div>
             <p class="labelmenu text-light">Lihat Transaksi Nasabah</p>
             <img class="menugambar" src="<?php echo base_url('assets/image/m_transaksi.png') ?>" alt="">
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="<?php echo base_url('Cadmin/history') ?>" class="btn btn-primary vv ml-4" type="button" style="width:310px">Lihat Transaksi Nasabah</a>
-            </div>
-          </div>
+          <a href="<?php echo base_url('Cadmin/history') ?>" class="btn btn-primary" type="button" style="width:310px">Lihat Transaksi Nasabah</a>
         </div>
       </div>
     </div>
