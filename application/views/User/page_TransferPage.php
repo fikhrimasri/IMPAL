@@ -4,7 +4,7 @@
       </div>
       <div class="card" style="margin-top:10px; width:400px; height: 420px">
         <div class="card-header bg-primary text-light">
-          Rekening Virtual
+          Transfer Uang
         </div>
         <div class="card-body" align="left">
           <div class="Form">
