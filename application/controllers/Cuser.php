@@ -149,5 +149,34 @@ class Cuser extends CI_Controller {
       $this->load->view('page_footer');
     }
 
+    public function transferjum()
+      {
+        $this->form_validation->set_rules('rek', 'rek', 'required');
+        $this->form_validation->set_rules('jum','jum','required');
+        if($this->form_validation->run() == FALSE)
+        {
+          redirect(site_url('Cuser/transfer'));
+        }else{
+        $tujuan = $this->input->post('rek');
+        $jumlah = $this->input->post('jum');
+        $sal = $this->M_user->get_saldo();
+        $akhir = (int)$sal-(int)$jumlah;
+          if($akhir>0){
+            redirect(site_url('Cuser/transfer'));
+          }else{
+            // $rek = $this->M_user->get_rekening();
+            $user = $this->M_user->findrek();
+            if($user != FALSE){
+              $this->M_user->updateT();
+              // $this->M_user->updateSaldo();
+              // $this->M_user->updateSaldoPenerima();
+              redirect(site_url('Cuser/homeUserPage'));
+            }else{
+              redirect(site_url('Cuser/transfer'));
+            }
+        }
+      }
+
+    }
 }
     
