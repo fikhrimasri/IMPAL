@@ -31,14 +31,8 @@
               </a>
           </li>
       </ul>
-      <ul class="nav navbar-nav nav-flex-icons" style="margin-left:905px">
+      <ul class="nav navbar-nav nav-flex-icons" style="margin-left:1250px">
           <style>.ad{margin-top:10px}</style>
-          <li class="ad nav-item mr-3" >
-            <a class="nav-link" style="color:white" href="#">Contact Us</a>
-          </li>
-          <li class="ad nav-item mr-3" >
-            <a class="nav-link" style="color:white" href="#">About</a>
-          </li>
           <?php
           if (($this->session->userdata('username'))!=null){
                         echo "

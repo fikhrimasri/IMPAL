@@ -18,12 +18,6 @@
             <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
         </a>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
-           <li class="nav-item mr-3">
-              <a class="nav-link text-white" href="#">Contact Us</a>
-           </li>
-           <li class="nav-item mr-3">
-              <a class="nav-link text-white" href="#">About</a>
-           </li>
            <?php
           if (($this->session->userdata('email'))!=null){
                         echo "
