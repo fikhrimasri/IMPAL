@@ -45,4 +45,7 @@
   overflow-y: auto;
   width: 100%;
 }
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
 </style>
