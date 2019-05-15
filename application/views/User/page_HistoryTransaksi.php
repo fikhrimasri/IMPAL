@@ -7,7 +7,7 @@
           History Transaksi
         </div>
         <div class="card-body" align="left">
-            <table class="table table-dark table-hover">
+            <table class="table table-fixed table-dark table-hover">
                 <thead>
                   <tr>
                     <th>No</th>
@@ -36,3 +36,20 @@
       </div>
     </div>
   </div>
+<style>
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+</style>
