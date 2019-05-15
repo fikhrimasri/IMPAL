@@ -11,12 +11,12 @@
             <form method="POST" action="<?php echo base_url('Cuser/transferjum/'); ?>">
             <?php $no=1; foreach ($data as $d ) {?>
             <div class="form-group">
-                <label>No Rekening :</label>
+                <label>No Rekening Pengirim :</label>
                 <input name="rek1" type="number" class="form-control" value=<?php echo $d->no_rekening?> readonly>
               </div>
             <?php } ?>
               <div class="form-group">
-                <label>No Rekening :</label>
+                <label>No Rekening Penerima :</label>
                 <input name="rek" type="number" class="form-control" placeholder="Enter Rekening Number">
               </div>
               <div class="form-group">
