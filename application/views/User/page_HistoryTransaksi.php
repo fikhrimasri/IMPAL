@@ -7,7 +7,8 @@
           History Transaksi
         </div>
         <div class="card-body" align="left">
-            <table class="table table-fixed table-dark table-hover">
+          <div class="table-wrapper-scroll-y my-custom-scrollbar">
+          <table class="table table-dark table-hover table-bordered table-striped mb-0"s>
                 <thead>
                   <tr>
                     <th>No</th>
@@ -29,6 +30,7 @@
                 <?php } ?>
                   </tbody>
               </table>
+          </div>
         </div>
         <div class="card-footer bg-primary text-light" style="font-size:15px">
           
@@ -37,18 +39,12 @@
     </div>
   </div>
 <style>
-.table-fixed thead {
-  width: 97%;
+.my-custom-scrollbar {
+position: relative;
+height: 290px;
+overflow: auto;
 }
-.table-fixed tbody {
-  height: 230px;
-  overflow-y: auto;
-  width: 100%;
-}
-.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
-  display: block;
-}
-.table-fixed tbody td, .table-fixed thead > tr> th {
-  border-bottom-width: 0;
+.table-wrapper-scroll-y {
+display: block;
 }
 </style>
