@@ -45,6 +45,9 @@
           <li class="nav-item mr-3" >
             <a class="nav-link text-white" href="#">About</a>
           </li>
+          <li class="nav-item mr-3" >
+            <a class="nav-link text-white" href="<?php echo base_url('Cuser/logOut/') ?>">Logout</a>
+          </li>
           <?php
           if (($this->session->userdata('email'))!=null){
                         echo "
