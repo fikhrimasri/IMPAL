@@ -8,7 +8,7 @@
         </div>
         <div class="card-body" align="left">
           <div class="Form">
-            <form method="POST" action="<?php echo base_url('Cuser/transferjum/'); ?>">
+            <form name="myForms" method="POST" action="<?php echo base_url('Cuser/transferjum/'); ?>" onsubmit="return validate()">
             <?php $no=1; foreach ($data as $d ) {?>
             <div class="form-group">
                 <label>No Rekening Pengirim :</label>
@@ -17,11 +17,11 @@
             <?php } ?>
               <div class="form-group">
                 <label>No Rekening Penerima :</label>
-                <input name="rek" type="number" class="form-control" placeholder="Enter Rekening Number" required>
+                <input name="rek" type="number" min="0" class="form-control" placeholder="Enter Rekening Number" required>
               </div>
               <div class="form-group">
                 <label>Jumlah Transfer :</label>
-                <input name="jum" type="number" class="form-control" placeholder="Enter Mount" required>
+                <input name="jum" type="number" min="50000" class="form-control" placeholder="Enter Mount" required>
               </div>
               <div class="modal" align="center" id="myModal" style="margin-top:170px">
                 <div class="modal-dialog">
@@ -54,3 +54,17 @@
       </div>
     </div>
   </div>
+
+<script>
+function validate(){
+        x=document.myForms
+        txt1=x.rek.value//rekening
+        txt2=x.jum.value//jumlah
+        if (txt1.length>=5 && txt1.length<=12 && txt2>=50000 && txt2<=10000000) {
+            return true
+        }else{
+            alert("Saldo atau no Rekening tidak benar")
+            return false
+        }
+}
+</script>

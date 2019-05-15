@@ -49,7 +49,7 @@
         </div>
         <div class="modal-body">
         <!-- isi form ini -->
-        <form method="post" action="<?php echo base_url('Cadmin/editnasabah/'); ?>">
+        <form method="post" name="myForm" action="<?php echo base_url('Cadmin/editnasabah/'); ?>">
         <input type="hidden" class="form-control" id="formGroupExampleInput" placeholder="No Rekening" name="rek" value="<?php echo $d->no_rekening ?>"  required>
         <div class="form-group">
             <label for="formGroupExampleInput">Username</label>
@@ -57,7 +57,7 @@
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput">Umur</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Umur" name="umur"  value="<?php echo $d->umur ?>" required>
+            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Umur" name="umur" maxlength="3" min="17"  value="<?php echo $d->umur ?>" required>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput">Nama</label>
@@ -65,7 +65,7 @@
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput">Saldo</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="<?php echo $d->saldo ?>" name="saldo"  value="<?php echo $d->saldo ?>" readonly>
+            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="<?php echo $d->saldo ?>" name="saldo" name="myInput2" value="<?php echo $d->saldo ?>" maxlength="6" readonly>
           </div>        
           </div>
         </div>
@@ -87,10 +87,10 @@
       </div>
       <div class="modal-body">
       <!-- isi form ini -->
-      <form method="POST" action="<?php echo base_url('Cadmin/tambahnasabah/'); ?>">
+      <form method="POST" name="myForms" action="<?php echo base_url('Cadmin/tambahnasabah/'); ?>" onsubmit="return validate()">
         <div class="form-group">
           <label for="formGroupExampleInput">No Rekening</label>
-          <input type="number" class="form-control" id="formGroupExampleInput" placeholder="No Rekening" name="rek" required >
+          <input type="number" class="form-control" id="formGroupExampleInput" placeholder="No Rekening" min="0" maxlength="6" name="rek" required >
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput">Username</label>
@@ -102,11 +102,11 @@
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput">Umur</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Umur" name="umur"required>
+          <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Umur" min="17" name="umur"required>
         </div> 
         <div class="form-group">
           <label for="formGroupExampleInput">Saldo</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Saldo" name="saldo"required>
+          <input type="number" class="form-control" id="formGroupExampleInput" min="50000" placeholder="Saldo" name="saldo"required>
         </div>              
         </div>
       </div>
@@ -121,7 +121,17 @@
 
 
 </body>
-  <script type="text/javascript">
+<script>
+function validate(){
+        x=document.myForms
+        txt1=x.rek.value
+        if (txt1>=0 && txt1.length<=10) {
+            return true
+        }else{
+            alert("no rekening dan saldo tidak benar")
+            return false
+        }
+}
     $(document).ready( function () {
         $('#table').DataTable();
     } );
