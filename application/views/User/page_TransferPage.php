@@ -17,11 +17,11 @@
             <?php } ?>
               <div class="form-group">
                 <label>No Rekening Penerima :</label>
-                <input name="rek" type="number" class="form-control" placeholder="Enter Rekening Number">
+                <input name="rek" type="number" class="form-control" placeholder="Enter Rekening Number" required>
               </div>
               <div class="form-group">
                 <label>Jumlah Transfer :</label>
-                <input name="jum" type="number" class="form-control" placeholder="Enter Mount">
+                <input name="jum" type="number" class="form-control" placeholder="Enter Mount" required>
               </div>
               <div class="modal" align="center" id="myModal" style="margin-top:170px">
                 <div class="modal-dialog">

@@ -19,8 +19,8 @@
                 </select>
               </div>
               <div class="form-group">
-                <input type="password" class="form-control" id="pwd" placeholder="Ubah Nama Nasabah" style="margin-bottom:5px">
-                <input type="password" class="form-control" id="pwd" placeholder="Ubah Password">
+                <input type="password" class="form-control" id="pwd" placeholder="Ubah Nama Nasabah" style="margin-bottom:5px" required>
+                <input type="password" class="form-control" id="pwd" placeholder="Ubah Password" required>
               </div>
                 <div class="modal" align="center" id="myModal" style="margin-top:170px">
                   <div class="modal-dialog">

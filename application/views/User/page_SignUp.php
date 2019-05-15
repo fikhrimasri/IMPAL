@@ -50,17 +50,17 @@
                      <div class="card-body">
                         <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cuser/addUser/'); ?>">
                            <label for="Username"style="color:white"><h6>Username</h6></label>
-                           <input name="username" type="text"placeholder="Username" class="form-control"required>
+                           <input name="username" type="text"placeholder="Username" class="form-control" required>
                            <label for="Email"style="color:white"><h6>Email</h6></label>
-                           <input name="email" type="email" placeholder="Email" class="form-control"required>
+                           <input name="email" type="email" placeholder="Email" class="form-control" required>
                            <label for="Password"style="color:white"><h6>Password</h6></label>
-                           <input name="password" type="password"placeholder="Password" class="form-control"required>
+                           <input name="password" type="password"placeholder="Password" class="form-control" required>
                            <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required/>
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                             </div>
                            <div class="signup text-center">
-                              <input type="submit" class="btn btn-primary" value="Sign Up">
+                              <input type="submit" class="btn btn-primary" value="Sign Up" required>
                            </div>
                         </form>
                   </div>

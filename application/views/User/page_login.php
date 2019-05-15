@@ -51,9 +51,9 @@
                   <div class="card-body">
                      <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cuser/signIn/'); ?>">
                         <label for="Username" style="color:white"><h6>Username</h6></label>
-                        <input name ="username" type="text" placeholder="Username..." class="form-control mb-2"required>
+                        <input name ="username" type="text" placeholder="Username..." class="form-control mb-2" required>
                         <label for="Password"style="color:white"><h6>Password</h6></label>
-                        <input name="password" type="password" placeholder="Password..." class="form-control mb-2"required>
+                        <input name="password" type="password" placeholder="Password..." class="form-control mb-2" required>
                         <br>
                         <div class="cekbox mt-2">
                               <label class="checkbox pull-left" for="checkbox">

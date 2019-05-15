@@ -11,12 +11,12 @@
             <form method="POST" action="<?php echo base_url('Cuser/save_password/'); ?>">
               <div class="form-group">
                 <label for="password">Password Lama :</label>
-                <input type="password" class="form-control" id="pwd" name="old" placeholder="Enter Password">
+                <input type="password" class="form-control" id="pwd" name="old" placeholder="Enter Password" required>
               </div>
               <div class="form-group">
                 <label for="pwd">Password Baru :</label>
-                <input type="password" class="form-control" id="pwd" name="new" placeholder="Enter New Password" style="margin-bottom:5px">
-                <input type="password" class="form-control" id="pwd" name="re_new" placeholder="Enter New Password">
+                <input type="password" class="form-control" id="pwd" name="new" placeholder="Enter New Password" style="margin-bottom:5px" required>
+                <input type="password" class="form-control" id="pwd" name="re_new" placeholder="Enter New Password" required>
               </div>
               <div class="modal" align="center" id="myModal" style="margin-top:170px">
                 <div class="modal-dialog">
