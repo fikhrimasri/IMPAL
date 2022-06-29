@@ -1,9 +1,9 @@
     <div class="container" align="center">
       <div class="HeadLabel">
-        <img src="<?php echo base_url('assets/image/LOGO.png'); ?>" style="height:70px; margin-top:10px" alt="">
+        <img src="<?php echo base_url('assets/image/LOGO1.png'); ?>" style="height:70px; margin-top:10px" alt="">
       </div>
       <div class="card" style="margin-top:10px; width:400px; height: 400px">
-        <div class="card-header bg-primary text-light">
+        <div class="card-header bg-dark text-light">
           Ganti Password
         </div>
         <div class="card-body" align="left">
@@ -39,11 +39,11 @@
               </div>
             </form>
             <div align="center">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Ubah Password</button>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Ubah Password</button>
             </div>
           </div>
         </div>
-        <div class="card-footer bg-primary text-light" style="font-size:15px">
+        <div class="card-footer bg-dark text-light" style="font-size:15px">
           <!-- <span><a class="text-light" href="<?php echo site_url('Cuser/logPage'); ?>">Login</a></span><span> | </span><span><a class="text-light" href="<?php echo site_url('Cuser/sigPage'); ?>">Sign Up</a></span> -->
         </div>
       </div>

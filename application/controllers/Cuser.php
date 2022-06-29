@@ -6,28 +6,33 @@ class Cuser extends CI_Controller {
 	public function __construct()
  	{
  		parent::__construct();
-     $this->load->model('M_user');
-     $this->load->library('unit_test');
+    $this->load->model('M_user');
     }
 
     public function index()
 	{
-		$this->load->view('page_awal');
+    $this->load->view('page_awal');
+    // $output = $this->load->view('production/tabel1', 'production', true);
+    // $output = $this->load->view('production/input', 'production', true);
+    // $output = $this->load->view('production/tabel1', 'production', true);
+
+    // $this->output->set_output($output);
     }
     
+    
     public function logPage()
-	{
-		$this->load->view('user/page_login');
+	 {
+		$this->load->view('User/page_login');
     }
     
     public function sigPage()
-	{
-		$this->load->view('user/page_SignUp');
+	  {
+		$this->load->view('User/page_SignUp');
     }
 
     public function homeUserPage()
     {
-      $this->load->view('user/page_UserHome');
+      $this->load->view('User/page_UserHome');
     }
     public function gantiPasswordPage()
     {
@@ -47,21 +52,6 @@ class Cuser extends CI_Controller {
        $this->load->view('user/page_updateDataNasabah');
        $this->load->view('page_footer');
       }
-
-    public function gantipass()
-    {
-      $this->load->view('page_header');
-      $this->load->view('user/page_GantiPassword');
-      $this->load->view('page_footer');
-    }
-
-    public function ceksaldo()
-    {
-      $this->load->view('page_header');
-      $this->load->view('user/page_CekSaldo');
-      $this->load->view('page_footer');
-    }
-
     public function history()
     {
       $this->load->view('page_header');
@@ -104,21 +94,20 @@ class Cuser extends CI_Controller {
           }
       }
 
-      public function signIn(){
-        $user = $this->M_user->findUser();
-        if($user != FALSE){
-          $this->session->set_userdata('username',$user['username']);
-          redirect(site_url('Cuser/homeUserPage'));
-        }else{
-          redirect(site_url('Cuser/logPage'));
-        }
+    public function signIn(){
+      $user = $this->M_user->findUser();
+      if($user != FALSE){
+        $this->session->set_userdata('username',$user['username']);
+        redirect(site_url('Cuser/homeUserPage'));
+      }else{
+        redirect(site_url('Cuser/logPage'));
       }
-
-      public function logOut(){
-        $this->session->sess_destroy();
-        redirect(base_url(''));
     }
-    
+
+    public function logOut(){
+      $this->session->sess_destroy();
+      redirect(base_url(''));
+    }
     public function save_password()
     { 
      $this->form_validation->set_rules('old', 'old', 'required|min_length[5]|max_length[20]');
@@ -142,14 +131,6 @@ class Cuser extends CI_Controller {
      }
     }
 
-    public function check_saldo()
-    {
-      $data_saldo = $this->M_user->check_saldo();
-      $this->load->view('page_header');
-      $this->load->view('user/page_CekSaldo', ['data'=>$data_saldo]);
-      $this->load->view('page_footer');
-    }
-
     public function history_user()
     {
       $data_history = $this->M_user->history();
@@ -160,7 +141,7 @@ class Cuser extends CI_Controller {
 
     public function transferjum()
       {
-        $this->form_validation->set_rules('rek', 'rek', 'required');
+        $this->form_validation->set_rules('jum1', 'jum1', 'required');
         $this->form_validation->set_rules('jum','jum','required');
         if($this->form_validation->run() == FALSE)
         {
@@ -176,8 +157,8 @@ class Cuser extends CI_Controller {
             // $rek = $this->M_user->get_rekening();
             $user = $this->M_user->findrek();
             if($user != FALSE){
-              $receiver = $this->input->post('rek');
-              $sender_id = $this->input->post('rek');
+              $receiver = $this->input->post('jum1');
+              $sender_id = $this->input->post('jum1');
               $amount = $this->input->post('jum');
               $jumlah = $this->input->post('jum');
               $sender = $this->input->post('rek1'); 
@@ -191,6 +172,8 @@ class Cuser extends CI_Controller {
             }
         }
       }
+
+      
 
     }
     

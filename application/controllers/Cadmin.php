@@ -35,7 +35,7 @@ class Cadmin extends CI_Controller {
         $user = $this->M_admin->findUser();
         if($user != FALSE){
           $this->session->set_userdata('username',$user['username']);
-          redirect(site_url('Cadmin/homeAdminPage'));
+          redirect(site_url('Cadmin/nasabah'));
         }else{
           redirect(site_url('Cadmin/logPage'));
         }

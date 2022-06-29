@@ -11,12 +11,12 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-   <div class="pembungkus1" style="background:url(<?php echo base_url('assets/image/slide6.jpg')?>);">
+   <div class="pembungkus1" style="background:url(<?php echo base_url('assets/image/slide.jpg')?>);">
 
   
-     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
+     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#white">
         <a class="navbar-brand"  href="<?php echo base_url('') ?>">
-            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
+            <img src="<?php echo base_url('assets/image/favicon2.png') ?>" alt="LogoGankBank" width="300px">
         </a>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
            <?php
@@ -38,27 +38,27 @@
          <div class="row mt-5">
             <div class="SignUp col-lg-4 mx-auto mt-5">
                <div class="card" style="margin-top:-50px">
-                     <div class="card-header bg-primary text-center">
-                        <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="150px" alt="Logo">
+                     <div class="card-header bg-dark text-center">
+                        <!-- <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="150px" alt="Logo"> -->
                      </div>
                      <div class="card-body">
                         <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cuser/addUser/'); ?>">
-                           <label for="Username"style="color:white"><h6>Username</h6></label>
+                           <label for="Username"style="color:black"><h6>Username</h6></label>
                            <input name="username" type="text"placeholder="Username" class="form-control" required>
-                           <label for="Email"style="color:white"><h6>Email</h6></label>
+                           <label for="Email"style="color:black"><h6>Email</h6></label>
                            <input name="email" type="email" placeholder="Email" class="form-control" required>
-                           <label for="Password"style="color:white"><h6>Password</h6></label>
+                           <label for="Password"style="color:black"><h6>Password</h6></label>
                            <input name="password" type="password"placeholder="Password" class="form-control" required>
                            <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required/>
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                             </div>
                            <div class="signup text-center">
-                              <input type="submit" class="btn btn-primary" value="Sign Up" required>
+                              <input type="submit" class="btn btn-dark" value="Sign Up" required>
                            </div>
                         </form>
                   </div>
-                  <div class="card-footer bg-primary">
+                  <div class="card-footer bg-dark">
 
                   </div>
                </div>
@@ -68,7 +68,7 @@
    </div>
    <footer class="page-footer font-small fixed-bottom" style="background-color:#0E0B2B;">
     <div class="footer-copyright text-center py-2 text-white" style="background-color:#0E0B2B;">
-      <span>© 2019 Copyright : </span><span><a href="#"> gangbank.com</a></span>
+      <span>© 2019 Copyright : </span><span><a href="#"> PERTAMINA.com</a></span>
     </div>
   </footer>
 

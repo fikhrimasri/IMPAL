@@ -12,10 +12,10 @@
   
 </head>
 <body>
-   <div class="pembungkus"style="background:url(<?php echo base_url('assets/image/slide6.jpg')?>);">
-     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B">
+   <div class="pembungkus"style="background:url(<?php echo base_url('assets/image/slide19.jpg')?>);">
+     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: white">
         <a class="navbar-brand"  href="<?php echo base_url('') ?>">
-            <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px">
+            <img src="<?php echo base_url('assets/image/favicon2.png') ?>" alt="LogoGankBank" width="300px">
         </a>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
            <?php
@@ -31,6 +31,9 @@
                         }
                         ?>
         </ul>
+        <a class="navbar-brand" href="<?php echo base_url('') ?>">
+            <img src="<?php echo base_url('assets/image/favicon4.png') ?>" alt="LogoGankBank" style="text-align:right;" width="250px">
+        </a>
      </nav>
      <div class="container">  
          <div class="Isi row mt-5 mb-5">
@@ -39,14 +42,14 @@
                   <label for="Buat_User" ><h3 id="LabelUser">Login Sebagai User</h3></label>
                </div>
                <div class="card">
-                  <div class="card-header bg-primary text-center">
-                     <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="logoankBank" width="150px">
+                  <div class="card-header bg-dark text-center">
+                     <!-- <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="logoankBank" width="150px"> -->
                   </div>
                   <div class="card-body">
                      <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cuser/signIn/'); ?>">
-                        <label for="Username" style="color:white"><h6>Username</h6></label>
+                        <label for="Username" style="color:black"><h6>Username</h6></label>
                         <input name ="username" type="text" placeholder="Username..." class="form-control mb-2" required>
-                        <label for="Password"style="color:white"><h6>Password</h6></label>
+                        <label for="Password"style="color:black"><h6>Password</h6></label>
                         <input name="password" type="password" placeholder="Password..." class="form-control mb-2" required>
                         <br>
                         <div class="cekbox mt-2">
@@ -55,14 +58,14 @@
                                  </label>
                         </div>
                         <div class="text-center">
-                              <input class="btn btn-primary" type="submit" value="login" style="border-radius:10px;">
+                              <input class="btn btn-dark" type="submit" value="login" style="border-radius:10px;">
                         </div>
                        
                         
                      </form>
                      
                   </div>
-                  <div class="card-footer bg-primary text-center text-white">
+                  <div class="card-footer bg-dark text-center text-white">
                         <span>Belum punya akun. <a class ="text-white"href="<?php echo base_url('Cuser/sigPage') ?>">Klik Disini</a></span>
                      </div>
                </div>
@@ -73,14 +76,14 @@
                </div>
                <div class="card">
                   
-                  <div class="card-header bg-primary text-center">
-                     <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="150px" alt="">
+                  <div class="card-header bg-dark text-center">
+                     <!-- <img src="<?php echo base_url('assets/image/LOGO.png') ?>" width="150px" alt=""> -->
                   </div>
                   <div class="card-body">
                      <form method="POST" class="form" role="form" autocomplete="off" action="<?php echo base_url('Cadmin/signIn/'); ?>">
-                           <label for="Username"style="color:white"><h6>Username</h6></label>
+                           <label for="Username"style="color:black"><h6>Username</h6></label>
                            <input name ="username" type="text" class="form-control mb-2" placeholder="Username..." required>
-                           <label for="Password"style="color:white"><h6>Password</h6></label>
+                           <label for="Password"style="color:black"><h6>Password</h6></label>
                            <input name="password" type="password" class="form-control mb-2" placeholder="Password..." required>
                            <br>
                            <div class="cekbox mt-2">
@@ -91,11 +94,11 @@
                               
                            </div>
                            <div class="text-center">
-                              <input type="submit" class="btn btn-primary" value="Login"style="border-radius:10px">
+                              <input type="submit" class="btn btn-dark" value="Login"style="border-radius:10px">
                            </div>
                      </form>
                   </div>
-                  <div class="card-footer bg-primary" style="height:50px">
+                  <div class="card-footer bg-dark" style="height:50px">
                   </div>
                </div>
          </div>
@@ -104,7 +107,7 @@
 
   <footer class="page-footer font-small fixed-bottom" style="background-color:#0E0B2B;">
       <div class="footer-copyright text-center py-2 text-white" style="background-color:#0E0B2B;">
-        <span>© 2019 Copyright : </span><span><a href="#"> gangbank.com</a></span>
+        <span>© 2019 Copyright : </span><span><a href="#"> PERTAMINA.com</a></span>
       </div>
     </footer>
    

@@ -96,20 +96,20 @@ class M_user extends CI_model
         // return $rekening_tujuan->result();
     }
 
-    // public function get_rekening()
-    // {
-    //     $this->db->select('no_rekening');
-    //     $this->db->from('nasabah');
-    //     $rek = $this->db->get();
-    //     // if ($rek->num_rows() > 0) {
-    //     //     foreach ($query->result() as $row) 
-    //     //     {
-    //     //     $data[] = $row;
-    //     //     }
-    //     //     return $data;
-    //     //     }    
-    //     return $rek->result();
-    // }
+    public function get_rekening()
+    {
+        $this->db->select('no_rekening');
+        $this->db->from('nasabah');
+        $rek = $this->db->get();
+        if ($rek->num_rows() > 0) {
+            foreach ($query->result() as $row) 
+            {
+            $data[] = $row;
+            }
+            return $data;
+            }    
+        return $rek->result();
+    }
 
     public function updateT()
     {

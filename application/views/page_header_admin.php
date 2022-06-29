@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GangBank</title>
-  <link rel="icon" href="<?php echo base_url('assets/image/favicon.png'); ?>" sizes="16x10" type="image/icon type">
+  <title>PERTAMINA EP</title>
+  <link rel="icon" href="<?php echo base_url('assets/image/favicon1.png'); ?>" sizes="16x10" type="image/icon type">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
@@ -22,12 +22,12 @@
 </head>
 
 <body>
-  <div class="main" style="background:url(<?php echo base_url('assets/image/slide6.jpg')?>);">
-    <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#0E0B2B; height: 70px" >
+  <div class="main" style="background:url(<?php echo base_url('assets/image/slide19.jpg')?>);">
+    <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:white; height: 100px" >
       <ul class="navbar-nav">
           <li class="nav-item">
               <a class="navbar-brand"  href="<?php echo base_url('Cadmin/homeAdminPage') ?>">
-                  <img src="<?php echo base_url('assets/image/LOGO.png') ?>" alt="LogoGankBank" width="150px" style="margin-left:-40px; margin-top:-3px">
+                  <img src="<?php echo base_url('assets/image/favicon2.png') ?>" alt="LogoGankBank" width="250px" style="margin-left:-40px; margin-top:-3px">
               </a>
           </li>
       </ul>
@@ -37,7 +37,7 @@
           if (($this->session->userdata('username'))!=null){
                         echo "
                         <li class='ad nav-item mr-3' >
-                        <a class='nav-link' style='color:white' href=".base_url('Cuser/logPage/').">Logout</a>
+                          <a class='nav-link' style='color:black' href=".base_url('Cuser/logPage/').">Logout</a>
                         </li>
                         ";
                     }else{
@@ -46,4 +46,5 @@
                         }
                         ?>
       </ul>
+      
     </nav>
